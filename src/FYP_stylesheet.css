@@ -1,0 +1,341 @@
+/* CSS File for DaftarCOV Website */
+/* DaftarCOV is a final year project by Kesavan Osbourne of Open University Malaysia (OUM) */
+/* It is an online registration system where users can register for Malaysia's COVID-19 Vaccination Program */
+
+/* PART 1: MASTHEAD */
+
+.mastHead-green {
+    display: flex;
+    background-color: #92D050;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    align-items: center;
+ }
+ 
+.mastHead-blue {
+    display: flex;
+    background-color: #00B0F0;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    align-items: center;
+ }
+
+/* The masthead appears at the top of every page in this website. */
+/* It is light green in the homepage and Vaccine Registration page. */
+/* It is light blue in the other pages. */
+
+ .siteName {
+     color: white;
+     font-size: 35px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     padding: 30px 10px;
+     margin-right: auto;
+ }
+ 
+ /* The DaftarCOV button will load the user's profile page when clicked. */
+ /* It is not functional at the website's homepage. */
+
+.signOut {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 10px;
+}
+/* This is the button users click if they want to sign out. */
+/* It does not appear on the homepage and Vaccine Registration page. */ 
+
+/* PART 2: HOMEPAGE */
+/* 1FYP_homepage.html */
+
+.landingPage {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     margin-top: 50px;
+     margin-left: 50px;
+     margin-right: 50px;
+     column-gap: 30px;
+ }
+ 
+ /* This is the main section of the homepage. */
+ 
+.Welcome {
+     background-color: #92D050;
+     color: white;
+     font-size: 32px;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 30px 10px;
+     text-align: center;
+ }
+ 
+ /* Welcome to DaftarCOV! You Can Register for the Malaysian National COVID-19 Immunisation Programme Here! */
+ 
+ .signUpInButtonSection {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ /* This invisible box contains the register and sign in buttons. */
+ 
+ .signUpInButtons {
+    background-color: #4472C4;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 30px 10px;
+    border-style: none;
+    border-radius: 15px;
+    margin: 15px 5px;
+ }
+ 
+/* This is the style for the following buttons on the homepage: */
+/* Vaccine Register */
+/* User Sign In */
+/* Admin Sign In (To be removed) */
+
+ 
+/* PART 3: VACCINE REGISTRATION PAGE / UPDATE ACCOUNT PAGE */
+/* 2FYP_sign_up.html */
+/* 7FYP_update.html */
+/* Most of the selectors here have the word "input" in their names */
+
+.signUpSection {
+    background-color: #92D050;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 10.8cm;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    margin: 10px 0px;
+}
+/* This is the main section of the Vaccine Registration page. */
+
+.updateSection {
+    background-color: #00B0F0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 10.8cm;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    margin: 10px 0px;
+}
+/* This is the main section of the Update Account page. */
+
+.inputTitle {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+/* This is the title of the main section of the Vaccine Registration and Update Account page. */
+
+.inputLeft {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* This is the left box containing webforms. */
+
+.inputRight {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* This is the right box containing webforms. */
+
+.inputField {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 100px;
+}
+/* This is for the webforms in the main section. */
+
+.inputButtonSection {
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 30px;
+}
+/* This is for the Submit buttons which sends data in the webforms to the database. */
+
+.inputButtons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+/* This is the style for buttons in the main sections of the following pages: */
+/* Vaccine Registration Page */
+/* Update Account Page */
+
+/* PART 4: USER PROFILE PAGE */
+/* 3FYP_user_page_A.html */
+/* 4FYP_user_page_B.html */
+/* Most of the selectors here have the word "info" in their names */
+
+.profilePageSection {
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   height: 10.8cm;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 5px;
+   justify-content: space-evenly;
+   margin: 10px 0px;
+}
+/* This is the main section of the profile page. */
+
+.infoBox {
+   background-color: #00B0F0;
+   padding: 10px 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+/* This box contains the basic personal/appointment details of the user. */
+
+.infoTitles {
+   text-align: center;
+   font-weight: bold;
+}
+/* This is the title of the .infoBox element. */
+
+.infoSection {
+   padding: 10px 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+/* This invisible box contains the .infoField elements. */
+
+.infoField {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   padding: 3px 3px;
+   display: flex;
+   justify-content: space-between;
+   margin: 5px 5px;
+}
+/* This element contains one of the many personal/appointment details of the users. */
+
+.infoDatabase {
+   margin-right: 300px;
+}
+/* This class is added to reduce the distance between the SQL data from the labels. */
+/* This class was previously called SQL */
+
+.infoButtonSection {
+   padding: 10px 10px;
+   display: flex;
+   justify-content: end;
+}
+/* This invisible box contains the following buttons. */
+/* Full Details */
+/* Update Account (Personal Details Section) */
+/* Postpone Appointment (Appointment Details Section) */
+
+/* PART 4.1: USER PROFILE PAGE (WHEN USER HAS NO APPOINTMENT)*/
+/* 3FYP_user_page_A.html */
+/* These elements appear only if the user currently has no appointment. */
+
+.noInfo {
+   background-color: #00B0F0;
+   padding: 10px 10px;
+}
+
+.noInfoMessage {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 5%;
+   margin-left: 10%;
+}
+
+/* PART 5: FULL PERSONAL/APPOINTMENT DETAILS PAGE */
+/* 5FYP_P_details.html */
+/* 6FYP_A_details.html */
+/* Most of the selectors here have the word "detail" in their names */
+
+.detailSection {
+    background-color: #00B0F0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 10.8cm;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto 2fr;
+    margin: 10px 0px;
+}
+/* This is the main section of the full personal/appointment details page. */
+
+ .detailTitle {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+/* This is the title of the main section of the full personal/appointment details page. */
+
+.detailLeft {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* This box contains the .detailField elements on the left side. */
+
+.detailRight {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* This box contains the .detailField elements on the right side. */
+
+.detailField {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 100px;
+}
+/* This element contains one of the many personal/appointment details of the users. */
+
+.detailButtonSection {
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* This invisible box contains the following buttons. */
+/* Profile Page */
+/* Update Account (Full Personal Details Page) */
+/* Postpone Appointment (Full Appointment Details Page) */
+
+.infoDetailButtons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 0px 30px;
+ }
+ /* This is the style for buttons in the main sections of the following pages: */
+ /* User Profile Page */
+ /* Full Personal Details Page */
+ /* Full Appointment Details Page */
