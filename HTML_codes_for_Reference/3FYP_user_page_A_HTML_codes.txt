@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OUM Final Year Project">
+    <meta name="keywords" content="Open University Malaysia, Final Year Project, Online Registration System">
+    <meta name="author" content="Kesavan Osbourne">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page (Without Appointment)</title>
+    <link rel="stylesheet" href="FYP_stylesheet.css">
+</head>
+<body>
+    <header class="mastHead-blue">
+        <!-- The masthead appears at the top of every page in this website. -->
+        <h1 class="siteName">DaftarCOV</h1>
+        <!-- The DaftarCOV button will load the user's profile page when clicked. -->
+        <!-- It is not functional at the website's homepage. -->
+        
+        <h3 class="signOut">SIGN OUT</h3>
+        <!-- This is the button users click if they want to sign out. -->
+    </header>
+    <main class="profilePageSection">
+    <!-- This is the main section of this page. -->
+
+        <div class="infoBox">
+        <!-- This box contains the basic personal/appointment details of the user. -->
+            
+            <h2 class="infoTitles">PERSONAL DETAILS</h2>
+            <!-- This is the title of the .infoBox element. -->
+
+            <div class="infoSection">
+            <!-- This is the invisible box within the .infoBox element which contains the .infoField elements. -->
+
+                <div class="infoField" id="userID">
+                <!-- This element contains one of the many personal/appointment details of the users. -->
+                    <label for="userID">User ID: </label>
+                    <label for="placeholder" class="infoDatabase">(Placeholder)</label>
+                </div>
+                <div class="infoField" id="firstName">
+                    <label for="firstName">First Name: </label>
+                    <label for="placeholder" class="infoDatabase">(Placeholder)</label>
+                </div>
+                <div class="infoField" id="lastName">
+                    <label for="lastName">Last Name: </label>
+                    <label for="placeholder" class="infoDatabase">(Placeholder)</label>
+                </div>
+                <div class="infoField" id="phone">
+                    <label for="phone">Phone Number: </label>
+                    <label for="placeholder" class="infoDatabase">(Placeholder)</label>
+                </div>
+                <div class="infoField" id="email">
+                    <label for="email">Email Address: </label>
+                    <label for="placeholder" class="infoDatabase">(Placeholder)</label>
+                </div>
+            </div>
+            <div class="infoButtonSection">
+            <!-- This is the invisible box within the .infoBox element which contains the following buttons. -->
+                <button class="infoDetailButtons" id="fullDetails">Full Details</button>
+                <button class="infoDetailButtons" id="updateAccount">Update Account</button>
+            </div>
+        </div>
+        <div class="noInfo">
+            <!-- This element only appears if the user currently does not have an appointment. -->
+            <h2 class="infoTitles">APPOINTMENT DETAILS</h2>
+            <div class="noInfoMessage">
+            <!-- This is the invisible box within the .noInfo element which contains the following sentences. -->
+                <h3 class="noAppoinment">Your vaccination appointment is still being finalised.</h3>
+                <h3 class="sorry">We apologise for the inconvenience.</h3>
+                <h3 class="thanks">Thank you for your patience.</h3>
+            </div>
+        </div>
+    </main>    
+</body>
+</html>

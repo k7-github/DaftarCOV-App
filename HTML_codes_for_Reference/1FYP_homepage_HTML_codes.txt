@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OUM Final Year Project">
+    <meta name="keywords" content="Open University Malaysia, Final Year Project, Online Registration System">
+    <meta name="author" content="Kesavan Osbourne">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DaftarCOV</title>
+    <link rel="stylesheet" href="FYP_stylesheet.css">
+</head>
+<body>
+    <header class="mastHead-green">
+        <!-- The masthead appears at the top of every page in this website. -->
+        <h1 class="siteName">DaftarCOV</h1>
+        <!-- The DaftarCOV button will load the user's profile page when clicked. -->
+        <!-- It is not functional at the website's homepage. -->
+        
+    </header>
+    <div class="landingPage">
+    <!-- This is the main section of the homepage. -->
+        <div class="Welcome">
+            <h2>Welcome to DaftarCOV! You Can Register for the Malaysian National COVID-19 Immunisation Programme Here!</h2>
+        </div>
+        <nav class= "signUpInButtonSection">
+            <button class="signUpInButtons">Vaccine Register</button>
+            <!-- The Vaccination Registration page will load when this button is clicked. -->
+            <button class="signUpInButtons">User Sign In</button>
+            <!-- When this button is clicked, the website will load a prompt window. -->
+            <!-- The prompt window requests the user's ID and password. -->
+            <!-- If the user inputs both correctly, the website will load the user's profile page. -->
+            <!-- Otherwise, the website displays one of 3 dialog boxes: -->
+                <!-- "Sorry, we cannot find an account with this user ID. Please try again." -->
+                <!-- "Sorry, we cannot find an account with this password. Please try again." -->    
+                <!-- "Sorry, we cannot find an account with this user ID and password. Please try again." -->
+            <button class="signUpInButtons">Admin Sign In</button>
+        </nav>
+    </div>    
+</body>
+</html>
+ 
+

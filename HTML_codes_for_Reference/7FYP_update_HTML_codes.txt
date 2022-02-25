@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OUM Final Year Project">
+    <meta name="keywords" content="Open University Malaysia, Final Year Project, Online Registration System">
+    <meta name="author" content="Kesavan Osbourne">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Account</title>
+    <link rel="stylesheet" href="FYP_stylesheet.css">
+</head>
+<body>
+    <header class="mastHead-blue">
+        <!-- The masthead appears at the top of every page in this website. -->
+        <h1 class="siteName">DaftarCOV</h1>
+        <!-- The DaftarCOV button will load the user's profile page when clicked. -->
+        <!-- It is not functional at the website's homepage. -->
+        
+        <h3 class="signOut">SIGN OUT</h3>
+        <!-- This is the button users click if they want to sign out. -->
+    </header>
+
+    <main class="updateSection">
+    <!-- This is the main section of this page. -->
+
+        <h1 class="inputTitle">UPDATE ACCOUNT</h1>
+        <!-- This is the title of the main section. -->
+
+        <form action=" " class="inputLeft">
+        <!-- This is the left box containing webforms for users to update their details. -->
+
+            <div class="inputField" id="newPassword">
+            <!-- This is one of the many webforms in this page. -->
+                <label for="newPassword">New Password: </label>
+                <input type="password" id="newPassword" name="newPassword">
+            </div>
+            <div class="inputField" id="confirmPassword">
+                <label for="confirmPassword">Confirm New Password: </label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div class="inputField" id="firstName">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="inputField" id="lastName">
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="inputField" id="cardNo">
+                <label for="cardNo">Identification Card No.: </label>
+                <input type="text" id="cardNo" name="cardNo" pattern="[0-9]{6}-[0-9, X]{2}-[0-9, X]{4}">
+            </div>
+            <div class="inputField" id="dateBirth">
+                <label for="dateBirth">Date of Birth:</label>
+                <input type="date" id="dateBirth" name="dateBirth">
+            </div>
+            <div class="inputField" id="phoneNo">
+                <label for="phoneNo">Phone Number:</label>
+                <input type="tel" id="phoneNo" name="phoneNo" pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}">
+            </div>
+            <div class="inputField" id="emailAddress">
+                <label for="emailAddress">Email Address: </label>
+                <input type="email" id="emailAddress" name="emailAddress">
+            </div>
+        </form>
+        
+        <form action=" " class="inputRight">
+        <!-- This is the right box containing webforms for users to update their details. -->
+            <div class="inputField" id="street">
+                <label for="street">Street: </label>
+                <input type="text" id="street" name="street">
+            </div>
+            <div class="inputField" id="cityTown">
+                <label for="cityTown">City/Town: </label>
+                <input type="text" id="cityTown" name="cityTown">
+            </div>
+            <div class="inputField" id="state">
+                <label for="state">State: </label>
+                <input list="states" id="state" name="state">
+                    <datalist id="states">
+                        <option value="Johor">
+                        <option value="Kedah">
+                        <option value="Kelantan">
+                        <option value="Melaka">
+                        <option value="Negeri Sembilan">
+                        <option value="Pahang">
+                        <option value="Pulau Pinang">
+                        <option value="Perak">
+                        <option value="Perlis">
+                        <option value="Sabah">
+                        <option value="Sarawak">
+                        <option value="Selangor">
+                        <option value="Terengganu">
+                        <option value="Federal Territory of Kuala Lumpur">
+                        <option value="Federal Territory of Labuan">
+                        <option value="Federal Territory of Putrajaya">
+                    </datalist>
+            </div>
+            <div class="inputField" id="postalCode">
+                <label for="postalCode">Postal Code:</label>
+                <input type="number" id="postalCode" name="postalCode" min="10000" max="99999">
+            </div>
+            <div class="inputField" id="medical">
+                <label for="medical">Medical Condition: </label>
+                <input type="text" id="medical" name="medical">
+            </div>
+        </form>
+        <form action=" " class="inputButtonSection">
+        <!-- This is the button users clicks after they finished updating their details in the webforms. -->
+            <input type="submit" class="inputButtons" value="UPDATE">
+        </form>
+        
+    </main>    
+</body>
+</html>
