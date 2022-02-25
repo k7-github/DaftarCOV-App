@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Masthead() {
   return (
-    <div>Masthead</div>
+    <div>
+      <header className="mastHead-green">
+        <h1 className="siteName">DaftarCOV</h1>
+      </header>
+    </div>
   )
 }
