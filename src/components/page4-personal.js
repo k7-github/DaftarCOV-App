@@ -5,8 +5,8 @@ import SignOut from './sign-out'
 export default function fullPersonalDetails() {
   return (
     <div>
-        <Masthead />
         <SignOut />
+        <Masthead />
     </div>
   )
 }

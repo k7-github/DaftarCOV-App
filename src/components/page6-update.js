@@ -6,8 +6,8 @@ import Update from './update'
 export default function updatePage() {
   return (
     <div>
-        <Masthead />
         <SignOut />
+        <Masthead />
         <Update />
     </div>
   )
