@@ -9,6 +9,8 @@ export default function mastheadBlue() {
     <div>
       <header className="mastHead" id="blue">
         <h1 className="siteName">DaftarCOV</h1>
+        <h3 className="signOut">SIGN OUT</h3>
+        {/* This is the button users click if they want to sign out. */}
       </header>
     </div>
   )
