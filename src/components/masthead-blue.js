@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function masthead() {
+export default function mastheadBlue() {
   return (
     <div>
-      <header className="mastHead" id="green">
+      <header className="mastHead" id="blue">
         <h1 className="siteName">DaftarCOV</h1>
       </header>
     </div>
