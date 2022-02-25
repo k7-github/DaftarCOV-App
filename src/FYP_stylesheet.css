@@ -71,7 +71,7 @@
  .signUpInButtonSection {
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
+     justify-content: space-evenly;
  }
  /* This invisible box contains the register and sign in buttons. */
  
