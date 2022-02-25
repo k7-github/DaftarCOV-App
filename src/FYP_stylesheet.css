@@ -4,21 +4,20 @@
 
 /* PART 1: MASTHEAD */
 
-.mastHead-green {
+.mastHead {
     display: flex;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    align-items: center;
+ }
+
+#green {
     background-color: #92D050;
-    margin: 0px 0px;
-    box-sizing: border-box;
-    align-items: center;
- }
- 
-.mastHead-blue {
-    display: flex;
+} 
+
+#blue {
     background-color: #00B0F0;
-    margin: 0px 0px;
-    box-sizing: border-box;
-    align-items: center;
- }
+}
 
 /* The masthead appears at the top of every page in this website. */
 /* It is light green in the homepage and Vaccine Registration page. */
