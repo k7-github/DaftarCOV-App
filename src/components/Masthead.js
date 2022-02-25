@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Masthead() {
+export default function masthead() {
   return (
     <div>
       <header className="mastHead" id="green">
