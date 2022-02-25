@@ -240,7 +240,7 @@
 .infoButtonSection {
    padding: 10px 10px;
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
 }
 /* This invisible box contains the following buttons. */
 /* Full Details */
