@@ -40,7 +40,7 @@ function handleSubmit(event) {
     <div>
         <Masthead />
         <SignUp/>
-        <main className='signUpSection'>
+        <main className='inputSection' id='green'>
           <h1 className="inputTitle">VACCINE REGISTRATION</h1>
           <form onSubmit={handleSubmit}>
             <div className='inputLeft'>
@@ -159,6 +159,7 @@ function handleSubmit(event) {
                           value={formData.state}
                           required
                           >
+                          <option value=" ">--- SELECT ----</option>
                           <option value="Johor">Johor</option>
                           <option value="Kedah">Kedah</option>
                           <option value="Kelantan">Kelantan</option>
