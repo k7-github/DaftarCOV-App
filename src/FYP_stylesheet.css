@@ -98,8 +98,7 @@
 /* 7FYP_update.html */
 /* Most of the selectors here have the word "input" in their names */
 
-.signUpSection {
-    background-color: #92D050;
+.inputSection {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -110,21 +109,9 @@
     grid-template-rows: 1fr auto 1fr;
     margin: 10px 0px;
 }
-/* This is the main section of the Vaccine Registration page. */
-
-.updateSection {
-    background-color: #00B0F0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    height: 10.8cm;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr auto 1fr;
-    margin: 10px 0px;
-}
-/* This is the main section of the Update Account page. */
+/* This is the main section of the Vaccine Registration page and Update Account page. */
+/* The former is light green (#92D050) */
+/* The latter is light blue (#00B0F0) */
 
 .inputTitle {
     grid-column: 1 / -1;
