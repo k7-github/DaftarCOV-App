@@ -104,9 +104,6 @@
     font-weight: bold;
     height: 10.8cm;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr auto 1fr;
     margin: 10px 0px;
 }
 /* This is the main section of the Vaccine Registration page and Update Account page. */
@@ -114,15 +111,20 @@
 /* The latter is light blue (#00B0F0) */
 
 .inputTitle {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
     text-align: center;
+    padding: 10px 10px;
 }
 /* This is the title of the main section of the Vaccine Registration and Update Account page. */
 
+.infoForm {
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .inputLeft {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -130,8 +132,7 @@
 /* This is the left box containing webforms. */
 
 .inputRight {
-    grid-column: 4 / -1;
-    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -145,11 +146,13 @@
 }
 /* This is for the webforms in the main section. */
 
+option {
+    text-align: center;
+}
+
 .inputButtonSection {
-    grid-column: 1 / -1;
-    grid-row: -2 / -1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin: 0px 30px;
 }
