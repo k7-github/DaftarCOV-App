@@ -41,10 +41,10 @@ function handleSubmit(event) {
         <Masthead />
         <SignUp/>
         <main className='signUpSection'>
-          <h1 class="inputTitle">VACCINE REGISTRATION</h1>
+          <h1 className="inputTitle">VACCINE REGISTRATION</h1>
           <form onSubmit={handleSubmit}>
             <div className='inputLeft'>
-              <div class="inputField" id="newPassword">
+              <div className="inputField" id="newPassword">
               {/* This is one of the many webforms in this page. */}
                   <label htmlFor="newPassword">New Password: </label>
                   <input
@@ -55,7 +55,7 @@ function handleSubmit(event) {
                       value={formData.newPassword}
                       required />
               </div>
-              <div class="inputField" id="confirmPassword">
+              <div className="inputField" id="confirmPassword">
                   <label htmlFor="confirmPassword">Confirm New Password: </label>
                   <input
                       onChange={handleChange}
@@ -65,7 +65,7 @@ function handleSubmit(event) {
                       value={formData.confirmPassword}
                       required />
               </div>
-              <div class="inputField" id="firstName">
+              <div className="inputField" id="firstName">
                   <label htmlFor="firstName">First Name: </label>
                   <input
                       onChange={handleChange}
@@ -75,7 +75,7 @@ function handleSubmit(event) {
                       value={formData.firstName}
                       required />
               </div>
-              <div class="inputField" id="lastName">
+              <div className="inputField" id="lastName">
                   <label htmlFor="lastName">Last Name: </label>
                   <input
                       onChange={handleChange}
@@ -85,7 +85,7 @@ function handleSubmit(event) {
                       value={formData.lastName}
                       required />
               </div>
-              <div class="inputField" id="cardNo">
+              <div className="inputField" id="cardNo">
                   <label htmlFor="cardNo">Identification Card No.: </label>
                   <input
                       onChange={handleChange}
@@ -96,7 +96,7 @@ function handleSubmit(event) {
                       pattern="[0-9]{6}-[0-9, X]{2}-[0-9, X]{4}"
                       required />
               </div>
-              <div class="inputField" id="dateBirth">
+              <div className="inputField" id="dateBirth">
                   <label htmlFor="dateBirth">Date of Birth: </label>
                   <input
                       onChange={handleChange}
@@ -106,7 +106,7 @@ function handleSubmit(event) {
                       value={formData.dateBirth}
                       required />
               </div>
-              <div class="inputField" id="phoneNo">
+              <div className="inputField" id="phoneNo">
                   <label htmlFor="phoneNo">Phone Number: </label>
                   <input
                       onChange={handleChange}
@@ -117,7 +117,7 @@ function handleSubmit(event) {
                       pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}"
                       required />
               </div>
-              <div class="inputField" id="emailAddress">
+              <div className="inputField" id="emailAddress">
                   <label htmlFor="emailAddress">Email Address: </label>
                   <input
                       onChange={handleChange}
@@ -130,7 +130,7 @@ function handleSubmit(event) {
               </div>
             </div>
             <div className='inputRight'>
-                <div class="inputField" id="street">
+                <div className="inputField" id="street">
                       <label htmlFor="street">Street: </label>
                       <input
                           onChange={handleChange}
@@ -140,7 +140,7 @@ function handleSubmit(event) {
                           value={formData.street}
                           required />
                   </div>
-                  <div class="inputField" id="cityTown">
+                  <div className="inputField" id="cityTown">
                       <label htmlFor="cityTown">City/Town: </label>
                       <input
                           onChange={handleChange}
@@ -150,7 +150,7 @@ function handleSubmit(event) {
                           value={formData.cityTown}
                           required />
                   </div>
-                  <div class="inputField" id="state">
+                  <div className="inputField" id="state">
                       <label htmlFor="state">State: </label>
                       <select
                           onChange={handleChange}
@@ -177,7 +177,7 @@ function handleSubmit(event) {
                           <option value="Federal Territory of Putrajaya">Federal Territory of Putrajaya</option>
                       </select>
                   </div>
-                  <div class="inputField" id="postalCode">
+                  <div className="inputField" id="postalCode">
                       <label htmlFor="postalCode">Postal Code: </label>
                       <input
                           onChange={handleChange}
@@ -188,7 +188,7 @@ function handleSubmit(event) {
                           min="10000" max="99999"
                           required />
                   </div>
-                  <div class="inputField" id="medical">
+                  <div className="inputField" id="medical">
                       <label htmlFor="medical">Medical Condition: </label>
                       <input
                           onChange={handleChange}
@@ -199,8 +199,8 @@ function handleSubmit(event) {
                           required />
                   </div>
             </div>
-            <div class="inputButtonSection">
-              <button class="inputButtons">FINISH</button>
+            <div className="inputButtonSection">
+              <button className="inputButtons">FINISH</button>
             </div> 
           </form>
         </main>
