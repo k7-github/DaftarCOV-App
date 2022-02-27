@@ -33,7 +33,7 @@ export default function SignUpPage () {
 }
 
 function handleSubmit(event) {
-  event.preventDefault()
+    event.preventDefault()
   // console.log(formData)
 }
   return (
@@ -42,7 +42,7 @@ function handleSubmit(event) {
         <SignUp/>
         <main className='inputSection' id='green'>
           <h1 className="inputTitle">VACCINE REGISTRATION</h1>
-          <form onSubmit={handleSubmit}>
+          <form className='infoForm' onSubmit={handleSubmit}>
             <div className='inputLeft'>
               <div className="inputField" id="newPassword">
               {/* This is one of the many webforms in this page. */}
@@ -63,6 +63,7 @@ function handleSubmit(event) {
                       id="confirmPassword"
                       name="confirmPassword"
                       value={formData.confirmPassword}
+                      pattern={formData.newPassword}
                       required />
               </div>
               <div className="inputField" id="firstName">
@@ -125,7 +126,6 @@ function handleSubmit(event) {
                       id="emailAddress"
                       name="emailAddress"
                       value={formData.emailAddress}
-                      pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}"
                       required />
               </div>
             </div>
@@ -159,7 +159,7 @@ function handleSubmit(event) {
                           value={formData.state}
                           required
                           >
-                          <option value=" ">--- SELECT ----</option>
+                          <option value=" " id='center'>--- SELECT ----</option>
                           <option value="Johor">Johor</option>
                           <option value="Kedah">Kedah</option>
                           <option value="Kelantan">Kelantan</option>
@@ -199,10 +199,14 @@ function handleSubmit(event) {
                           value={formData.medical}
                           required />
                   </div>
+                  <br />
+                  <br />
+                  <br />
+                  <div className="inputField">
+                        <div></div>
+                        <button className="inputButtons">FINISH</button>
+                  </div> 
             </div>
-            <div className="inputButtonSection">
-              <button className="inputButtons">FINISH</button>
-            </div> 
           </form>
         </main>
     </div>
