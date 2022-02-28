@@ -258,7 +258,6 @@ option {
 /* Most of the selectors here have the word "detail" in their names */
 
 .detailSection {
-    background-color: #00B0F0;
     color: white;
     font-weight: bold;
     height: 10.7cm;
