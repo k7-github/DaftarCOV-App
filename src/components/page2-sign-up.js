@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Masthead from './masthead-green'
-import SignUp from './sign-up'
 
 export default function SignUpPage () {
   const [formData, setFormData] = useState(
@@ -39,7 +38,6 @@ function handleSubmit(event) {
   return (
     <div>
         <Masthead />
-        <SignUp/>
         <main className='inputSection' id='green'>
           <h1 className="inputTitle">VACCINE REGISTRATION</h1>
           <form className='infoForm' onSubmit={handleSubmit}>
