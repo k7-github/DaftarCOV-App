@@ -8,7 +8,7 @@ export default function homepage() {
       <Masthead />
       <div className="landingPage">
       {/* This is the main section of the homepage. */}
-        <div className="Welcome">
+        <div className="Welcome" id='green'>
             <h2>Welcome to DaftarCOV! You Can Register for the Malaysian National COVID-19 Immunisation Programme Here!</h2>
         </div>
         <nav className= "signUpInButtonSection">
