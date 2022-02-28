@@ -8,11 +8,11 @@ import UpdatePage from './components/page6-update'
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      {/* <Homepage /> */}
       <SignUpPage />
-      <ProfilePage />
-      <VaccinePage />
-      <UpdatePage />
+      {/* <ProfilePage /> */}
+      {/* <VaccinePage /> */}
+      {/* <UpdatePage /> */}
 
     </div>
   );
