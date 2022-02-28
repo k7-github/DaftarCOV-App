@@ -6,7 +6,7 @@ export default function fullPersonalDetails() {
   return (
     <div>
         <Masthead />
-        <main className="detailSection">
+        <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">FULL PERSONAL DETAILS</h1>
@@ -72,7 +72,7 @@ export default function fullPersonalDetails() {
         </div>
         <div className="detailButtonSection">
             {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="profilePage">Profile Page</button>
+            <button className="infoDetailButtons" id="appointment">Full Appointment Details</button>
             <button className="infoDetailButtons" id="updateAccount">Update Account</button>
         </div> 
     </main>    
