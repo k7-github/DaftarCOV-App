@@ -2,6 +2,10 @@
 /* DaftarCOV is a final year project by Kesavan Osbourne of Open University Malaysia (OUM) */
 /* It is an online registration system where users can register for Malaysia's COVID-19 Vaccination Program */
 
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* PART 1: MASTHEAD */
 
 .mastHead {
@@ -26,7 +30,6 @@
  .siteName {
      color: white;
      font-size: 35px;
-     font-family: Arial, Helvetica, sans-serif;
      font-weight: bold;
      padding: 30px 10px;
      margin-right: auto;
@@ -37,7 +40,6 @@
 
 .signOut {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 30px 10px;
 }
 /* This is the button users click if they want to sign out. */
@@ -61,7 +63,6 @@
      background-color: #92D050;
      color: white;
      font-size: 32px;
-     font-family: Arial, Helvetica, sans-serif;
      padding: 30px 10px;
      text-align: center;
  }
@@ -78,7 +79,6 @@
  .signUpInButtons {
     background-color: #4472C4;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     font-weight: bolder;
     padding: 30px 10px;
@@ -92,7 +92,18 @@
 /* User Sign In */
 /* Admin Sign In (To be removed) */
 
- 
+
+.footer {
+    background-color: #595959;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
 /* PART 3: VACCINE REGISTRATION PAGE / UPDATE ACCOUNT PAGE */
 /* 2FYP_sign_up.html */
 /* 7FYP_update.html */
@@ -100,7 +111,6 @@
 
 .inputSection {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     height: 10.8cm;
     width: 100%;
@@ -151,7 +161,6 @@ option {
 }
 
 .inputButtons {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 5px 10px;
     border-style: none;
@@ -168,7 +177,6 @@ option {
 
 .profilePageSection {
    color: white;
-   font-family: Arial, Helvetica, sans-serif;
    height: 10.8cm;
    width: 100%;
    display: grid;
@@ -203,7 +211,6 @@ option {
 /* This invisible box contains the .infoField elements. */
 
 .infoField {
-   font-family: Arial, Helvetica, sans-serif;
    font-weight: bold;
    padding: 3px 3px;
    display: flex;
@@ -253,7 +260,6 @@ option {
 .detailSection {
     background-color: #00B0F0;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     height: 10.8cm;
     width: 100%;
@@ -309,7 +315,6 @@ option {
 /* Postpone Appointment (Full Appointment Details Page) */
 
 .infoDetailButtons {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 5px 10px;
     border-style: none;
