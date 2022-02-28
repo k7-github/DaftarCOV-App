@@ -150,14 +150,6 @@ option {
     text-align: center;
 }
 
-.inputButtonSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 30px;
-}
-/* This is for the Submit buttons which sends data in the webforms to the database. */
-
 .inputButtons {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
