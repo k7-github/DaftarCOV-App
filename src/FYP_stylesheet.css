@@ -93,15 +93,18 @@
 /* Admin Sign In (To be removed) */
 
 
-.footer {
+footer {
     background-color: #595959;
-    color: white;
-    text-align: center;
-    font-weight: bold;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    font-weight: bold;
 }
 
 /* PART 3: VACCINE REGISTRATION PAGE / UPDATE ACCOUNT PAGE */
@@ -112,9 +115,9 @@
 .inputSection {
     color: white;
     font-weight: bold;
-    height: 10.8cm;
+    height: 10.7cm;
     width: 100%;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 /* This is the main section of the Vaccine Registration page and Update Account page. */
 /* The former is light green (#92D050) */
@@ -177,7 +180,7 @@ option {
 
 .profilePageSection {
    color: white;
-   height: 10.8cm;
+   height: 10.7cm;
    width: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -261,7 +264,7 @@ option {
     background-color: #00B0F0;
     color: white;
     font-weight: bold;
-    height: 10.8cm;
+    height: 10.7cm;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
