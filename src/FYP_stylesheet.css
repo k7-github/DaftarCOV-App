@@ -49,12 +49,12 @@
 /* 1FYP_homepage.html */
 
 .landingPage {
-     display: grid;
-     grid-template-columns: 2fr 1fr;
-     margin-top: 50px;
-     margin-left: 50px;
-     margin-right: 50px;
-     column-gap: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    column-gap: 30px;
  }
  
  /* This is the main section of the homepage. */
