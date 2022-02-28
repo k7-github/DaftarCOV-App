@@ -71,7 +71,7 @@ export default function fullPersonalDetails() {
             </div>
         </div>
         <div className="detailButtonSection">
-            This is the invisible box within the .infoBox element which contains the following buttons.
+            {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
             <button className="infoDetailButtons" id="profilePage">Profile Page</button>
             <button className="infoDetailButtons" id="updateAccount">Update Account</button>
         </div> 
