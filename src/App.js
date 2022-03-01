@@ -8,19 +8,19 @@ import UpdatePage from './components/page5-update'
 
 function App() {
   return (
+    // <div className="App">
+    //     <Homepage />
+    //     <SignUpPage />
+    //     <VaccinePage />
+    //     <PersonalPage />
+    //     <UpdatePage />
+    // </div>
     <BrowserRouter>
-      <div className="App">
-        {/* <Homepage />
-        <SignUpPage />
-        <VaccinePage />
-        <PersonalPage />
-        <UpdatePage /> */}
         <Route path='/'         component={Homepage} />
         <Route path='/signup'   component={SignUpPage} />
         <Route path='/vaccine'  component={VaccinePage} />
         <Route path='/personal' component={PersonalPage} />
         <Route path='/update'   component={UpdatePage} />
-    </div>
     </BrowserRouter>
   );
 }
