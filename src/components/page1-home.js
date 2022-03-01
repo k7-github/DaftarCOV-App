@@ -2,7 +2,7 @@ import React from 'react'
 import Masthead from './masthead-green'
 import Footer from './footer'
 
-export default function homepage() {
+export default function Homepage() {
   return (
     <div>
       <Masthead />
