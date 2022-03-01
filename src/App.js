@@ -13,7 +13,6 @@ function App() {
       <VaccinePage />
       <PersonalPage />
       <UpdatePage />
-
     </div>
   );
 }
