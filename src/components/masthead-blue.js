@@ -7,6 +7,9 @@ import { useState } from 'react'
 
 export default function MastheadBlue() {
 
+  // Add function to DaftarCOV element in the masthead.
+  // When this element is clicked, the website will load the Full Personal Page of the signed user.
+  
   const [login, setlogin] = useState(true)
 
   function signOut() {
