@@ -277,6 +277,7 @@ option {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     text-align: center;
+    padding: 30px 10px;
 }
 /* This is the title of the main section of the full personal/appointment details page. */
 
