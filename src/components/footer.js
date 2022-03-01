@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-      <small className='copyright'>A Final Year Project by Kesavan Osbourne Satkunananthan from Open University Malaysia. @2022</small>
+      <small className='copyright'> @2022, Open University Malaysia</small>
     </footer>
   )
 }
