@@ -33,6 +33,7 @@
      font-weight: bold;
      padding: 30px 20px;
      margin-right: auto;
+     cursor: pointer;
  }
  
  /* The DaftarCOV button will load the user's profile page when clicked. */
@@ -41,6 +42,7 @@
 .signOut {
     color: white;
     padding: 30px 30px;
+    cursor: pointer;
 }
 /* This is the button users click if they want to sign out. */
 /* It does not appear on the homepage and Vaccine Registration page. */ 
@@ -84,6 +86,7 @@
     border-style: none;
     border-radius: 15px;
     margin: 15px 5px;
+    cursor: pointer;
  }
  
 /* This is the style for the following buttons on the homepage: */
@@ -165,6 +168,7 @@ option {
     padding: 5px 10px;
     border-style: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 /* This is the style for buttons in the main sections of the following pages: */
 /* Vaccine Registration Page */
@@ -319,6 +323,7 @@ option {
     border-style: none;
     border-radius: 5px;
     margin: 0px 30px;
+    cursor: pointer;
  }
  /* This is the style for buttons in the main sections of the following pages: */
  /* User Profile Page */
