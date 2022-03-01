@@ -1,8 +1,23 @@
 import React from 'react'
 import Masthead from './masthead-blue'
 import Footer from './footer'
+import { useState } from 'react'
 
-export default function fullAppointmentDetails() {
+export default function FullAppointmentDetails() {
+  const [data, setData] = useState({
+    appointmentID: "",
+    date: "",
+    time: "",
+    locationID: "",
+    locationName: "",
+    phoneNo: "",
+    emailAddress: "",
+    street: "",
+    cityTown: "",
+    state: "",
+    postalCode: ""
+  })
+  
   return (
     <div>
         <Masthead />

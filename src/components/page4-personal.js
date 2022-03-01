@@ -1,9 +1,25 @@
 import React from 'react'
 import Masthead from './masthead-blue'
 import Footer from './footer'
+import { useState } from 'react'
 
-export default function fullPersonalDetails() {
-  return (
+export default function FullPersonalDetails() {
+  const [data, setData] = useState({
+    userID: "",
+    firstName: "",
+    lastName: "",
+    cardNo: "",
+    dateBirth: "",
+    phoneNo: "",
+    emailAddress: "",
+    street: "",
+    cityTown: "",
+    state: "",
+    postalCode: "",
+    medical: ""
+  })
+  
+    return (
     <div>
         <Masthead />
         <main className="detailSection" id="blue">
