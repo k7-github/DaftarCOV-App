@@ -15,7 +15,7 @@ function App() {
     //     <PersonalPage />
     //     <UpdatePage />
     // </div>
-    <BrowserRouter>
+    <BrowserRouter basename="/daftarcov">
         <Route path='/'         component={Homepage} />
         <Route path='/signup'   component={SignUpPage} />
         <Route path='/vaccine'  component={VaccinePage} />
