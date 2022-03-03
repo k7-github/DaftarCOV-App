@@ -8,13 +8,6 @@ import UpdatePage from './pages/page5-update'
 
 function App() {
   return (
-    // <div className="App">
-    //     <Homepage />
-    //     <SignUpPage />
-    //     <VaccinePage />
-    //     <PersonalPage />
-    //     <UpdatePage />
-    // </div>
     <Router>
       <Routes>
         <Route path='/'         element={<Homepage />} />
