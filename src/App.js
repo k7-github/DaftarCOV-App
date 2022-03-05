@@ -1,10 +1,13 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Homepage from './pages/page1-home'
-import SignUpPage from './pages/page2-sign-up'
-import VaccinePage from './pages/page3-vaccine'
-import PersonalPage from './pages/page4-personal'
-import UpdatePage from './pages/page5-update'
+import DaftarCOV from "./components/masthead-green"
+import Profile from "./components/masthead-blue"
+import Footer from "./components/footer"
+import Homepage from './pages/1_home'
+import SignUpPage from './pages/2_sign-up'
+import VaccinePage from './pages/3_vaccine'
+import PersonalPage from './pages/4_personal'
+import UpdatePage from './pages/5_update'
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
         <Route path='/personal' element={<PersonalPage />} />
         <Route path='/update'   element={<UpdatePage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

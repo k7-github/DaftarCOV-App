@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Masthead from '../components/masthead-blue'
-import Footer from '../components/footer'
 
 export default function UpdatePage() {
     const [formData, setFormData] = useState(
@@ -208,7 +207,6 @@ export default function UpdatePage() {
             </div>
           </form>
         </main>
-        <Footer />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Masthead from '../components/masthead-blue'
-import Footer from '../components/footer'
 // import { useState } from 'react'
 
 export default function FullAppointmentDetails() {
@@ -84,7 +83,6 @@ export default function FullAppointmentDetails() {
             <button className="infoDetailButtons" id="postpone">Postpone Appointment</button>
         </div> 
     </main>
-        <Footer />
     </div>
   )
 }

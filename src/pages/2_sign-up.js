@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Masthead from '../components/masthead-green'
-import Footer from '../components/footer'
 
 export default function SignUpPage () {
   const [formData, setFormData] = useState(
@@ -208,7 +207,6 @@ function handleSubmit(event) {
             </div>
           </form>
         </main>
-        <Footer />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Masthead from '../components/masthead-blue'
-import Footer from '../components/footer'
 // import { useState } from 'react'
 
 export default function FullPersonalDetails() {
@@ -92,7 +91,6 @@ export default function FullPersonalDetails() {
             <button className="infoDetailButtons" id="updateAccount">Update Account</button>
         </div> 
     </main>    
-        <Footer />
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Masthead from '../components/masthead-green'
-import Footer from '../components/footer'
 
 export default function Homepage() {
   return (
@@ -24,7 +23,6 @@ export default function Homepage() {
                 {/* "Sorry, we cannot find an account with this user ID and password. Please try again." */}
         </nav>
     </div>
-    <Footer />
     </div>
   )
 }
