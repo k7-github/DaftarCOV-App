@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Masthead from '../components/masthead-green'
 
 export default function SignUpPage () {
   const [formData, setFormData] = useState(
@@ -36,6 +37,7 @@ function handleSubmit(event) {
 }
   return (
     <div>
+        <Masthead />
         <main className='inputSection' id='green'>
           <h1 className="inputTitle">VACCINE REGISTRATION</h1>
           <form className='infoForm' onSubmit={handleSubmit}>
