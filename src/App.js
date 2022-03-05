@@ -1,7 +1,5 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import DaftarCOV from "./components/masthead-green"
-import Profile from "./components/masthead-blue"
 import Footer from "./components/footer"
 import Homepage from './pages/1_home'
 import SignUpPage from './pages/2_sign-up'
@@ -13,10 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="daftarcov" element={<DaftarCOV/>}>
         <Route path='/'         element={<Homepage />} />
         <Route path='/signup'   element={<SignUpPage />} />
-        </Route>
         <Route path='/vaccine'  element={<VaccinePage />} />
         <Route path='/personal' element={<PersonalPage />} />
         <Route path='/update'   element={<UpdatePage />} />
