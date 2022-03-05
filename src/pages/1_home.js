@@ -1,10 +1,8 @@
 import React from 'react'
-import Masthead from '../components/masthead-green'
 
 export default function Homepage() {
   return (
     <div>
-      <Masthead />
       <div className="landingPage">
       {/* This is the main section of the homepage. */}
         <div className="Welcome" id='green'>

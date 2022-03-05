@@ -13,8 +13,10 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="daftarcov" element={<DaftarCOV/>}>
         <Route path='/'         element={<Homepage />} />
         <Route path='/signup'   element={<SignUpPage />} />
+        </Route>
         <Route path='/vaccine'  element={<VaccinePage />} />
         <Route path='/personal' element={<PersonalPage />} />
         <Route path='/update'   element={<UpdatePage />} />

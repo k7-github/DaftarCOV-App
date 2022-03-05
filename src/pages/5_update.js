@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import Masthead from '../components/masthead-blue'
 
 export default function UpdatePage() {
     const [formData, setFormData] = useState(
@@ -38,7 +37,6 @@ export default function UpdatePage() {
 
   return (
     <div>
-        <Masthead />
         <main className='inputSection' id='blue'>
           <h1 className="inputTitle">ACCOUNT UPDATE</h1>
           <form className='infoForm' onSubmit={handleSubmit}>

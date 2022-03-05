@@ -1,5 +1,4 @@
 import React from 'react'
-import Masthead from '../components/masthead-blue'
 // import { useState } from 'react'
 
 export default function FullPersonalDetails() {
@@ -20,7 +19,6 @@ export default function FullPersonalDetails() {
   
     return (
     <div>
-        <Masthead />
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
