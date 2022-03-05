@@ -1,4 +1,6 @@
 import React from 'react'
+import Masthead from '../components/masthead-blue'
+import { useNavigate } from 'react-router-dom'
 // import { useState } from 'react'
 
 export default function FullAppointmentDetails() {
@@ -16,8 +18,10 @@ export default function FullAppointmentDetails() {
 //     postalCode: ""
 //   })
   
-  return (
+const navigate = useNavigate()  
+return (
     <div>
+        <Masthead />
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
@@ -77,7 +81,7 @@ export default function FullAppointmentDetails() {
         </div>
         <div className="detailButtonSection">
         {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="personal">Full Personal Details</button>
+            <button className="infoDetailButtons" id="personal" onClick={() => {navigate('/personal')}}>Full Personal Details</button>
             <button className="infoDetailButtons" id="postpone">Postpone Appointment</button>
         </div> 
     </main>
