@@ -41,7 +41,7 @@ export default function UpdatePage() {
         <Masthead />
         <main className='inputSection' id='blue'>
           <h1 className="inputTitle">ACCOUNT UPDATE</h1>
-          <form className='infoForm' onSubmit={handleSubmit}>
+          <form className='inputForm' onSubmit={handleSubmit}>
             <div className='inputLeft'>
               <div className="inputField" id="newPassword">
               {/* This is one of the many webforms in this page. */}

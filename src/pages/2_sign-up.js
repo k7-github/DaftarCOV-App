@@ -40,7 +40,7 @@ function handleSubmit(event) {
         <Masthead />
         <main className='inputSection' id='green'>
           <h1 className="inputTitle">VACCINE REGISTRATION</h1>
-          <form className='infoForm' onSubmit={handleSubmit}>
+          <form className='inputForm' onSubmit={handleSubmit}>
             <div className='inputLeft'>
               <div className="inputField" id="newPassword">
               {/* This is one of the many webforms in this page. */}

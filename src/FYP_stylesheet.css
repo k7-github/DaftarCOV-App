@@ -131,7 +131,7 @@ footer {
 }
 /* This is the title of the main section of the Vaccine Registration and Update Account page. */
 
-.infoForm {
+.inputForm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
