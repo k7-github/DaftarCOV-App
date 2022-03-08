@@ -20,12 +20,12 @@ export default function Homepage() {
             {/* The Vaccination Registration page will load when this button is clicked. */}
             <button className="signUpInButtons">User Sign In</button>
             {/* When this button is clicked, the website will load a prompt window. */}
-            {/* The prompt window requests the user's ID and password. */}
+            {/* The prompt window requests the user's email address and password. */}
             {/* If the user inputs both correctly, the website will load the user's profile page. */}
             {/* Otherwise, the website displays one of 3 dialog boxes: */}
-                {/* "Sorry, we cannot find an account with this user ID. Please try again." */}
+                {/* "Sorry, we cannot find an account with this email address. Please try again." */}
                 {/* "Sorry, we cannot find an account with this password. Please try again."     */}
-                {/* "Sorry, we cannot find an account with this user ID and password. Please try again." */}
+                {/* "Sorry, we cannot find an account with this email address and password. Please try again." */}
         </nav>
     </div>
     </div>
