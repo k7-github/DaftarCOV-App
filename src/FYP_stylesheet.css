@@ -50,6 +50,40 @@
 
 /* PART 2: MODALS */
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.modal-window {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    height: 5.45cm;
+    width: 10.21cm;
+    background-color: #F0F0F0;
+    border-color: #1882D6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal-title {
+    background-color: white;
+    border-color: #1882D6;
+    text-align: left;
+}
+.modal-body {
+    text-align: center;
+}
+.modal-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 /* PART 3: HOMEPAGE */
 /* 1_home.js */
 
