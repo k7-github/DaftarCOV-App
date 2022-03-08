@@ -36,8 +36,9 @@
      cursor: pointer;
  }
  
- /* The DaftarCOV button will load the user's profile page when clicked. */
- /* It is not functional at the website's homepage. */
+ /* The DaftarCOV button will load the following pages when clicked: */
+    /* The DaftarCOV homepage if the user is NOT signed in. */
+    /* The user's personal details page when the user is signed in. */
 
 .signOut {
     color: white;
@@ -47,8 +48,10 @@
 /* This is the button users click if they want to sign out. */
 /* It does not appear on the homepage and Vaccine Registration page. */ 
 
-/* PART 2: HOMEPAGE */
-/* 1FYP_homepage.html */
+/* PART 2: MODALS */
+
+/* PART 3: HOMEPAGE */
+/* 1_home.js */
 
 .landingPage {
     display: grid;
@@ -109,9 +112,9 @@ footer {
     font-weight: bold;
 }
 
-/* PART 3: VACCINE REGISTRATION PAGE / UPDATE ACCOUNT PAGE */
-/* 2FYP_sign_up.html */
-/* 7FYP_update.html */
+/* PART 4: VACCINE REGISTRATION PAGE / UPDATE ACCOUNT PAGE */
+/* 2_sign-up.js */
+/* 5_update.js */
 /* Most of the selectors here have the word "input" in their names */
 
 .inputSection {
@@ -174,9 +177,9 @@ option {
 /* Vaccine Registration Page */
 /* Update Account Page */
 
-/* PART 5: FULL PERSONAL/APPOINTMENT DETAILS PAGE */
-/* 5FYP_P_details.html */
-/* 6FYP_A_details.html */
+/* PART 5: PERSONAL/APPOINTMENT DETAILS PAGE */
+/* 3_vaccine.js */
+/* 4_personal.js */
 /* Most of the selectors here have the word "detail" in their names */
 
 .detailSection {
@@ -189,7 +192,7 @@ option {
     grid-template-rows: 1fr auto 2fr;
     margin: 10px 0px;
 }
-/* This is the main section of the full personal/appointment details page. */
+/* This is the main section of the personal/appointment details page. */
 
  .detailTitle {
     grid-column: 1 / -1;
@@ -197,7 +200,7 @@ option {
     text-align: center;
     padding: 30px 10px;
 }
-/* This is the title of the main section of the full personal/appointment details page. */
+/* This is the title of the main section of the personal/appointment details page. */
 
 .detailLeft {
     grid-column: 1 / 4;
@@ -232,11 +235,14 @@ option {
     align-items: center;
 }
 /* This invisible box contains the following buttons. */
-/* Profile Page */
-/* Update Account (Full Personal Details Page) */
-/* Postpone Appointment (Full Appointment Details Page) */
+    /* On the Appointment Details Page */
+        /* Personal Details */
+        /* Postpone Appoinment */
+    /* On the Personal Details Page */
+        /* Appointment Details */
+        /* Update Account */
 
-.infoDetailButtons {
+.detailButtons {
     font-size: 12px;
     padding: 5px 10px;
     border-style: none;
@@ -244,7 +250,3 @@ option {
     margin: 0px 30px;
     cursor: pointer;
  }
- /* This is the style for buttons in the main sections of the following pages: */
- /* User Profile Page */
- /* Full Personal Details Page */
- /* Full Appointment Details Page */
