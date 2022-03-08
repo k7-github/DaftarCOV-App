@@ -34,8 +34,8 @@ return (
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
-        <h1 className="detailTitle">FULL PERSONAL DETAILS</h1>
-        {/* This box contains the full personal details of the user. */}
+        <h1 className="detailTitle">PERSONAL DETAILS</h1>
+        {/* This box contains the personal details of the user. */}
 
         <div className="detailLeft">
         {/* This is the invisible box within the .infoBox element which contains the .detailField elements on the left side. */}
@@ -97,8 +97,8 @@ return (
         </div>
         <div className="detailButtonSection">
             {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="appointment" onClick={toVaccine}>Full Appointment Details</button>
-            <button className="infoDetailButtons" id="updateAccount" onClick={toUpdate}>Update Account</button>
+            <button className="detailButtons" id="appointment" onClick={toVaccine}>Appointment Details</button>
+            <button className="detailButtons" id="updateAccount" onClick={toUpdate}>Update Account</button>
         </div> 
     </main>    
     </div>

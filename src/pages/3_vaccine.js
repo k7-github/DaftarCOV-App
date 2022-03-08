@@ -29,8 +29,8 @@ return (
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
-        <h1 className="detailTitle">FULL APPOINTMENT DETAILS</h1>
-        {/* This box contains the full appointment details of the user. */}
+        <h1 className="detailTitle">APPOINTMENT DETAILS</h1>
+        {/* This box contains the appointment details of the user. */}
 
         <div className="detailLeft">
         {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
@@ -85,8 +85,8 @@ return (
         </div>
         <div className="detailButtonSection">
         {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="personal" onClick={toPersonal}>Full Personal Details</button>
-            <button className="infoDetailButtons" id="postpone">Postpone Appointment</button>
+            <button className="detailButtons" id="personal" onClick={toPersonal}>Personal Details</button>
+            <button className="detailButtons" id="postpone">Postpone Appointment</button>
         </div> 
     </main>
     </div>
