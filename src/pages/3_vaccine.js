@@ -19,6 +19,10 @@ export default function FullAppointmentDetails() {
 //   })
   
 const navigate = useNavigate()  
+function toPersonal () {
+    navigate('/personal')
+  }
+
 return (
     <div>
         <Masthead />
@@ -81,7 +85,7 @@ return (
         </div>
         <div className="detailButtonSection">
         {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="personal" onClick={() => {navigate('/personal')}}>Full Personal Details</button>
+            <button className="infoDetailButtons" id="personal" onClick={toPersonal}>Full Personal Details</button>
             <button className="infoDetailButtons" id="postpone">Postpone Appointment</button>
         </div> 
     </main>

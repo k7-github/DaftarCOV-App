@@ -7,10 +7,15 @@ import { useNavigate } from 'react-router-dom'
 
 export default function MastheadGreen() {
   const navigate = useNavigate()
+
+  function toHome () {
+    navigate('/')
+  }
+
   return (
     <div>
       <header className="mastHead" id="green">
-        <h1 className="siteName" onClick={() => {navigate('/')}}>DaftarCOV</h1>
+        <h1 className="siteName" onClick={toHome}>DaftarCOV</h1>
       </header>
     </div>
   )

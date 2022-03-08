@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Homepage() {
   const navigate = useNavigate()
+  function toSignUp () {
+    navigate('/signup')
+  }
   return (
     <div>
       <Masthead />
@@ -13,7 +16,7 @@ export default function Homepage() {
             <h2>Welcome to DaftarCOV! You Can Register for the Malaysian National COVID-19 Immunisation Programme Here!</h2>
         </div>
         <nav className= "signUpInButtonSection">
-            <button className="signUpInButtons" onClick={() => {navigate('/signup')}}>Vaccine Register</button>
+            <button className="signUpInButtons" onClick={toSignUp}>Vaccine Register</button>
             {/* The Vaccination Registration page will load when this button is clicked. */}
             <button className="signUpInButtons">User Sign In</button>
             {/* When this button is clicked, the website will load a prompt window. */}

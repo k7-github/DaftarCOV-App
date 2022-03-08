@@ -14,6 +14,10 @@ export default function MastheadBlue() {
   
   const [login, setlogin] = useState(true)
 
+  function toPersonal () {
+    navigate('/personal')
+  }
+  
   function signOut() {
     setlogin(false)
     console.log(login)
@@ -22,7 +26,7 @@ export default function MastheadBlue() {
   return (
     <div>
       <header className="mastHead" id="blue">
-        <h1 className="siteName" onClick={() => {navigate('/personal')}}>DaftarCOV</h1>
+        <h1 className="siteName" onClick={toPersonal}>DaftarCOV</h1>
         <h3 className="signOut" onClick={signOut}>SIGN OUT</h3>
         {/* This is the button users click if they want to sign out. */}
       </header>

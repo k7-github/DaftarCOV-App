@@ -19,7 +19,15 @@ export default function FullPersonalDetails() {
 //     medical: ""
 //   })
   
-const navigate = useNavigate()    
+const navigate = useNavigate()
+function toVaccine () {
+    navigate('/vaccine')
+  }
+
+function toUpdate () {
+navigate('/update')
+}
+
 return (
     <div>
         <Masthead />
@@ -89,8 +97,8 @@ return (
         </div>
         <div className="detailButtonSection">
             {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
-            <button className="infoDetailButtons" id="appointment" onClick={() => {navigate('/vaccine')}}>Full Appointment Details</button>
-            <button className="infoDetailButtons" id="updateAccount" onClick={() => {navigate('/update')}}>Update Account</button>
+            <button className="infoDetailButtons" id="appointment" onClick={toVaccine}>Full Appointment Details</button>
+            <button className="infoDetailButtons" id="updateAccount" onClick={toUpdate}>Update Account</button>
         </div> 
     </main>    
     </div>
