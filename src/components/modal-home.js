@@ -1,8 +1,12 @@
 import React from 'react'
-import ReactDom from 'react-dom'
 
-export default function ModalHome() {
-  return ReactDom.createPortal(
+export default function ModalHome({setModal}) {
+  
+    function cancelSignIn() {
+        setModal(false)
+    }
+
+    return (
     <div className='modal-overlay'>
         <div className='modal-window'>
             <div className='modal-title'>
@@ -13,7 +17,7 @@ export default function ModalHome() {
             </div>
             <div className='modal-bottom'>
                 <button className='modal-buttons'>Sign In</button>
-                <button className='modal-buttons'>Cancel</button>
+                <button className='modal-buttons' onClick={cancelSignIn}>Cancel</button>
             </div>
         </div>
     </div>
