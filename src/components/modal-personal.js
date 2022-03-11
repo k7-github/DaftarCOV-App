@@ -1,10 +1,15 @@
 import React from 'react'
-
-export default function ModalVaccine({setModal}) {
+import { useNavigate } from 'react-router-dom'
+export default function ModalPersonal({setModal}) {
   
     function cancelUpdate() {
         setModal(false)
     }
+    const navigate = useNavigate()
+
+    function toUpdate () {
+        navigate('/update')
+        }
 
     return (
     <div className='modal-overlay'>
@@ -17,7 +22,7 @@ export default function ModalVaccine({setModal}) {
                 <p>(Password Web Form)</p>
             </div>
             <div className='modal-bottom'>
-                <button className='modal-buttons'>OK</button>
+                <button className='modal-buttons' onClick={toUpdate}>OK</button>
                 <button className='modal-buttons' onClick={cancelUpdate}>Cancel</button>
             </div>
         </div>
