@@ -14,6 +14,7 @@ export default function ModalVaccine({setModal}) {
             </div>
             <div className='modal-body'>
                 <p>Please enter your password again to confirm that you want to postpone your appointment.</p>
+                <p>(Password Web Form)</p>
             </div>
             <div className='modal-bottom'>
                 <button className='modal-buttons'>Postpone</button>
