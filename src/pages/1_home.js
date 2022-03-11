@@ -5,7 +5,7 @@ import { useState } from 'react'
 // import { useEffect } from 'react'
 import ModalHome from '../components/modal-home'
 
-export default function Homepage() {
+export default function Homepage({setSignedIn}) {
   
   const [modal, setModal] = useState(false)
 
@@ -38,7 +38,7 @@ export default function Homepage() {
                 {/* "Sorry, we cannot find an account with this email address and password. Please try again." */}
         </nav>
       </div>
-      {modal === true && <ModalHome setModal={setModal} />}
+      {modal === true && <ModalHome setModal={setModal} setSignedIn={setSignedIn}/>}
     </div>
   )
 }

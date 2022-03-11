@@ -5,7 +5,7 @@ import ModalPersonal from '../components/modal-personal'
 import { useState } from 'react'
 // import { useEffect } from 'react'
 
-export default function FullPersonalDetails() {
+export default function FullPersonalDetails({setSignedIn}) {
 //   const [data, setData] = useState({
 //     userID: "",
 //     firstName: "",
@@ -35,7 +35,7 @@ function toVaccine () {
 
   return (
     <div>
-        <Masthead />
+        <Masthead setSignedIn={setSignedIn}/>
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 

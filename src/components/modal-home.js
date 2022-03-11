@@ -1,9 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-export default function ModalHome({setModal}) {
+export default function ModalHome({setModal, setSignedIn}) {
     
     const navigate = useNavigate()
     function toPersonal () {
+        setSignedIn(true)
         navigate('/personal')
       }
     
