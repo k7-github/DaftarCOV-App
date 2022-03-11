@@ -2,6 +2,7 @@ import React from 'react'
 import Masthead from '../components/masthead-blue'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+// import { useEffect } from 'react'
 import ModalVaccine from '../components/modal-vaccine'
 
 export default function FullAppointmentDetails() {
