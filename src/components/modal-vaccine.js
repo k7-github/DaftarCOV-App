@@ -17,7 +17,7 @@ export default function ModalVaccine({setModal}) {
                 <p>(Password Web Form)</p>
             </div>
             <div className='modal-bottom'>
-                <button className='modal-buttons'>Postpone</button>
+                <button className='modal-buttons'>OK</button>
                 <button className='modal-buttons' onClick={cancelPostpone}>Cancel</button>
             </div>
         </div>
