@@ -2,6 +2,7 @@ import React from 'react'
 import Masthead from '../components/masthead-green'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+// import { useEffect } from 'react'
 import ModalHome from '../components/modal-home'
 
 export default function Homepage() {
