@@ -8,7 +8,7 @@ export default function Homepage() {
   
   const [modal, setModal] = useState(false)
 
-  function signIn() {
+  function signInModal() {
     setModal(true)
   }
 
@@ -27,7 +27,7 @@ export default function Homepage() {
         <nav className= "signUpInButtonSection">
             <button className="signUpInButtons" onClick={toSignUp}>Vaccine Register</button>
             {/* The Vaccination Registration page will load when this button is clicked. */}
-            <button className="signUpInButtons" onClick={signIn}>User Sign In</button>
+            <button className="signUpInButtons" onClick={signInModal}>User Sign In</button>
             {/* When this button is clicked, the website will load a prompt window. */}
             {/* The prompt window requests the user's email address and password. */}
             {/* If the user inputs both correctly, the website will load the user's profile page. */}
