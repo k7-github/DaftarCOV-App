@@ -1,7 +1,9 @@
 import React from 'react'
 import Masthead from '../components/masthead-blue'
 import { useNavigate } from 'react-router-dom'
-// import { useState } from 'react'
+import ModalPersonal from '../components/modal-personal'
+import { useState } from 'react'
+// import { useEffect } from 'react'
 
 export default function FullPersonalDetails() {
 //   const [data, setData] = useState({
@@ -18,17 +20,20 @@ export default function FullPersonalDetails() {
 //     postalCode: "",
 //     medical: ""
 //   })
-  
+
+const [modal, setModal] = useState(false)
+
+function updateModal() {
+    setModal(true)
+  }
+
+
 const navigate = useNavigate()
 function toVaccine () {
     navigate('/vaccine')
   }
 
-function toUpdate () {
-navigate('/update')
-}
-
-return (
+  return (
     <div>
         <Masthead />
         <main className="detailSection" id="blue">
@@ -98,9 +103,10 @@ return (
         <div className="detailButtonSection">
             {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
             <button className="detailButtons" id="appointment" onClick={toVaccine}>Appointment Details</button>
-            <button className="detailButtons" id="updateAccount" onClick={toUpdate}>Update Account</button>
+            <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
     </main>    
+    {modal === true && <ModalPersonal setModal={setModal} />}
     </div>
   )
 }
