@@ -21,7 +21,7 @@ export default function FullAppointmentDetails() {
 
 const [modal, setModal] = useState(false)
 
-function postpone() {
+function postponeModal() {
     setModal(true)
   }
 
@@ -93,7 +93,7 @@ return (
         <div className="detailButtonSection">
         {/* This is the invisible box within the .infoBox element which contains the following buttons. */}
             <button className="detailButtons" id="personal" onClick={toPersonal}>Personal Details</button>
-            <button className="detailButtons" id="postpone" onClick={postpone}>Postpone Appointment</button>
+            <button className="detailButtons" id="postpone" onClick={postponeModal}>Postpone Appointment</button>
         </div> 
     </main>
     {modal === true && <ModalVaccine setModal={setModal} />}
