@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { LoginContext } from './components/login-context'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Footer from "./components/footer"
 import Homepage from './pages/1_home'
@@ -12,21 +13,18 @@ function App() {
   const [signedIn, setSignedIn] = useState(false)
   
   return (
-    <Router>
-      <Routes>
-        {/* <Route path='/'         element={<Homepage />} /> */}
-        {/* <Route path='/signup'   element={<SignUpPage />} /> */}
-        {/* <Route path='/vaccine'  element={<VaccinePage />} /> */}
-        {/* <Route path='/personal' element={<PersonalPage />} /> */}
-        {/* <Route path='/update'   element={<UpdatePage />} /> */}
-        { signedIn === false && <Route path='/'         element={<Homepage />} setSignedIn={setSignedIn} />}
-        { signedIn === false && <Route path='/signup'   element={<SignUpPage />} setSignedIn={setSignedIn} />}
-        { signedIn === true && <Route path='/vaccine'  element={<VaccinePage />} setSignedIn={setSignedIn} />}
-        { signedIn === true && <Route path='/personal' element={<PersonalPage />} setSignedIn={setSignedIn} />}
-        { signedIn === true && <Route path='/update'   element={<UpdatePage />} setSignedIn={setSignedIn} />}
-      </Routes>
-      <Footer />
-    </Router>
+    <LoginContext.Provider value={{signedIn, setSignedIn}}>
+      <Router>
+        <Routes>
+          { signedIn === false && <Route path='/'         element={<Homepage />} />}
+          { signedIn === false && <Route path='/signup'   element={<SignUpPage />} />}
+          { signedIn === true && <Route path='/vaccine'  element={<VaccinePage />} />}
+          { signedIn === true && <Route path='/personal' element={<PersonalPage />} />}
+          { signedIn === true && <Route path='/update'   element={<UpdatePage />} />}
+        </Routes>
+        <Footer />
+      </Router>
+    </LoginContext.Provider>
   );
 }
 
