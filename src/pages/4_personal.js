@@ -1,9 +1,9 @@
 import React from 'react'
-import Masthead from '../components/masthead-blue'
 import { useNavigate, useParams } from 'react-router-dom'
+
+import Masthead from '../components/masthead-blue'
 import ModalPersonal from '../components/modal-personal'
-import { useState } from 'react'
-// import { useEffect } from 'react'
+import useFetch from '../components/useFetch'
 
 export default function FullPersonalDetails({setSignedIn}) {
 //   const [data, setData] = useState({

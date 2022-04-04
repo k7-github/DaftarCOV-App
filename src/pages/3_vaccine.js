@@ -1,9 +1,9 @@
 import React from 'react'
 import Masthead from '../components/masthead-blue'
-import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
-// import { useEffect } from 'react'
 import ModalVaccine from '../components/modal-vaccine'
+import { useNavigate, useParams } from 'react-router-dom'
+import useFetch from '../components/useFetch'
+
 
 export default function FullAppointmentDetails() {
 //   const [data, setData] = useState({
