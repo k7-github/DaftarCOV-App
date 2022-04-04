@@ -1,7 +1,8 @@
 import React from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
+
 import Masthead from '../components/masthead-blue'
 import ModalVaccine from '../components/modal-vaccine'
-import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from '../components/useFetch'
 
 
