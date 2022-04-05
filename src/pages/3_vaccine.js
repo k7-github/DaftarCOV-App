@@ -6,7 +6,7 @@ import ModalVaccine from '../components/modal-vaccine'
 import useFetch from '../components/useFetch'
 
 
-export default function FullAppointmentDetails() {
+export default function AppointmentDetails() {
 //   const [data, setData] = useState({
 //     appointmentID: "",
 //     date: "",

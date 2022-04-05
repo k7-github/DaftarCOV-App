@@ -5,7 +5,7 @@ import Masthead from '../components/masthead-blue'
 import ModalPersonal from '../components/modal-personal'
 import useFetch from '../components/useFetch'
 
-export default function FullPersonalDetails({setSignedIn}) {
+export default function PersonalDetails({setSignedIn}) {
 //   const [data, setData] = useState({
 //     userID: "",
 //     firstName: "",
