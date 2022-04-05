@@ -6,21 +6,9 @@ import ModalPersonal from '../components/modal-personal'
 import useFetch from '../components/useFetch'
 
 export default function PersonalDetails() {
-//   const [data, setData] = useState({
-//     userID: "",
-//     firstName: "",
-//     lastName: "",
-//     cardNo: "",
-//     dateBirth: "",
-//     phoneNo: "",
-//     emailAddress: "",
-//     street: "",
-//     cityTown: "",
-//     state: "",
-//     postalCode: "",
-//     medical: ""
-//   })
 
+const { id } = useParams()
+const { data, error, loading } = useFetch('', id)
 const [modal, setModal] = useState(false)
 
 function updateModal() {
@@ -49,54 +37,78 @@ function toVaccine () {
             {/* This element contains one of the many personal details of the users. */}
 
                 <label for="userID">User ID: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="firstName">
-                <label for="firstName">First Name: </label>
+            <div className="detailField" id="userFirstName">
+                <label for="userFirstName">First Name: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="lastName">
-                <label for="lastName">Last Name: </label>
+            <div className="detailField" id="userLastName">
+                <label for="userLastName">Last Name: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="cardNo">
-                <label for="cardNo">Identification Card No.: </label>
+            <div className="detailField" id="userCardNo">
+                <label for="userCardNo">Identification Card No.: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="dateBirth">
-                <label for="dateBirth">Date of Birth:</label>
+            <div className="detailField" id="userDateBirth">
+                <label for="userDateBirth">Date of Birth:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="phoneNo">
-                <label for="phoneNo">Phone Number:</label>
+            <div className="detailField" id="userPhoneNo">
+                <label for="userPhoneNo">Phone Number:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="emailAddress">
-                <label for="emailAddress">Email Address: </label>
+            <div className="detailField" id="userEmailAddress">
+                <label for="userEmailAddress">Email Address: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
         <div className="detailRight">
         {/* This is the invisible box within the .infoBox element which contains the .detailField elements on the left side. */}
             
-            <div className="detailField" id="street">
-                <label for="street">Street: </label>
+            <div className="detailField" id="userStreet">
+                <label for="userStreet">Street: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="cityTown">
-                <label for="cityTown">City/Town: </label>
+            <div className="detailField" id="userCityTown">
+                <label for="userCityTown">City/Town: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="state">
-                <label for="state">State: </label>
+            <div className="detailField" id="userState">
+                <label for="userState">State: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="postalCode">
-                <label for="postalCode">Postal Code:</label>
+            <div className="detailField" id="userPostalCode">
+                <label for="userPostalCode">Postal Code:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="medical">
-                <label for="medical">Medical Condition: </label>
+            <div className="detailField" id="userMedical">
+                <label for="userMedical">Medical Condition: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
