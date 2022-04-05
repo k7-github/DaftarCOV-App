@@ -5,7 +5,7 @@ import Masthead from '../components/masthead-blue'
 import ModalPersonal from '../components/modal-personal'
 import useFetch from '../components/useFetch'
 
-export default function PersonalDetails({setSignedIn}) {
+export default function PersonalDetails() {
 //   const [data, setData] = useState({
 //     userID: "",
 //     firstName: "",
@@ -35,7 +35,7 @@ function toVaccine () {
 
   return (
     <div>
-        <Masthead setSignedIn={setSignedIn}/>
+        <Masthead />
         <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
