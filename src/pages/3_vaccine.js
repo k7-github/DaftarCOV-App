@@ -7,20 +7,9 @@ import useFetch from '../components/useFetch'
 
 
 export default function AppointmentDetails() {
-//   const [data, setData] = useState({
-//     appointmentID: "",
-//     date: "",
-//     time: "",
-//     locationID: "",
-//     locationName: "",
-//     phoneNo: "",
-//     emailAddress: "",
-//     street: "",
-//     cityTown: "",
-//     state: "",
-//     postalCode: ""
-//   })
 
+const { id } = useParams()
+const { data, error, loading } = useFetch('', id)
 const [modal, setModal] = useState(false)
 
 function postponeModal() {
@@ -46,49 +35,71 @@ return (
             <div className="detailField" id="appointmentID">
             {/* This element contains one of the many appointment details of the users. */}
                 <label for="appointmentID">Appointment ID: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="date">
-                <label for="date">Date: </label>
+            <div className="detailField" id="appointmentDate">
+                <label for="appointmentDate">Date: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="time">
-                <label for="time">Time: </label>
+            <div className="detailField" id="appointmentTime">
+                <label for="appointmentTime">Time: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationID">
                 <label for="locationID">Location ID: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationName">
                 <label for="locationName">Location Name:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="phoneNo">
-                <label for="phoneNo">Phone Number:</label>
+            <div className="detailField" id="locationPhoneNo">
+                <label for="locationPhoneNo">Phone Number:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="emailAddress">
-                <label for="emailAddress">Email Address: </label>
+            <div className="detailField" id="locationEmailAddress">
+                <label for="locationEmailAddress">Email Address: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
         <div className="detailRight">
         {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
-            <div className="detailField" id="street">
-                <label for="street">Street: </label>
+            <div className="detailField" id="locationStreet">
+                <label for="locationStreet">Street: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="cityTown">
-                <label for="cityTown">City/Town: </label>
+            <div className="detailField" id="locationCityTown">
+                <label for="locationCityTown">City/Town: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="state">
-                <label for="state">State: </label>
+            <div className="detailField" id="locationState">
+                <label for="locationState">State: </label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
-            <div className="detailField" id="postalCode">
-                <label for="postalCode">Postal Code:</label>
+            <div className="detailField" id="locationPostalCode">
+                <label for="locationPostalCode">Postal Code:</label>
+                {loading && <p className= "loadingPlaceholder">Loading...</p>}
+                {data && <p className="detailDatabase">{ data }</p>}
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
@@ -98,7 +109,7 @@ return (
             <button className="detailButtons" id="postpone" onClick={postponeModal}>Postpone Appointment</button>
         </div> 
     </main>
-    {modal === true && <ModalVaccine setModal={setModal} />}
+    {modal && <ModalVaccine setModal={setModal} />}
     </div>
   )
 }
