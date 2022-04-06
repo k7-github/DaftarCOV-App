@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import SignOutModal from './modal-sign-out'
+import SignOutModal from './modals/sign-out'
 
 // The masthead appears at the top of every page in this website.
 // It is light green in the homepage and Vaccine Registration page.

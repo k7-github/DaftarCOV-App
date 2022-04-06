@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import Masthead from '../components/masthead-blue'
-import ModalPersonal from '../components/modal-personal'
+import ModalPersonal from '../components//modals/update-security'
 import useFetch from '../components/useFetch'
 
 export default function PersonalDetails() {

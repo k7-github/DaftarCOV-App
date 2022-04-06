@@ -3,7 +3,7 @@ import Masthead from '../components/masthead-green'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 // import { useEffect } from 'react'
-import ModalHome from '../components/modal-home'
+import ModalHome from '../components/modals/sign-in'
 
 export default function Homepage() {
   
