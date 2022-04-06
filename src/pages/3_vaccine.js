@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import Masthead from '../components/masthead-blue'
-import ModalVaccine from '../components/modals/confirm-postpone'
+import ModalVaccine from '../components/modals/postpone-security'
 import useFetch from '../components/useFetch'
 
 
