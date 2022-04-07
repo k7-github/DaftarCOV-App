@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import Masthead from '../components/masthead-blue'
-import ModalPersonal from '../components//modals/update-security'
+import SecurityUpdateModal from '../components//modals/update-security'
 import useFetch from '../components/useFetch'
 
 export default function PersonalDetails() {
@@ -118,7 +118,7 @@ function toVaccine () {
             <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
     </main>    
-    {modal === true && <ModalPersonal setModal={setModal} />}
+    {modal === true && <SecurityUpdateModal setModal={setModal} />}
     </div>
   )
 }
