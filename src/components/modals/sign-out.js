@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { LoginContext } from './login-context'
+import { LoginContext } from '../login-context'
 import { useNavigate } from 'react-router-dom'
 
 export default function SignOutModal({setModal}) {
