@@ -1,8 +1,9 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-import SecurityUpdateModal from '../components//modals/update-security'
+import SecurityUpdateModal from '../components/modals/update-security'
 import useFetch from '../components/useFetch'
 
 export default function PersonalDetails() {
