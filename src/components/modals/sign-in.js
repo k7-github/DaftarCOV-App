@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import { LoginContext } from '../login-context'
 import { useNavigate } from 'react-router-dom'
 
-export default function ModalHome({setModal}) {
-    
+export default function SignInModal({setModal}) {
+    // This component executes when the "User Sign In" button in 1_home.js is clicked
     const { setSignedIn } = useContext(LoginContext)
     const navigate = useNavigate()
     function toPersonal () {
