@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-export default function ModalPersonal({setModal}) {
-  
+export default function SecurityUpdateModal({setModal}) {
+    // This component executes when the "Update Account" button in 4_personal.js is clicked.
+    // It requests the user to enter their password again before they can update their personal details.
     function cancelUpdate() {
         setModal(false)
     }
