@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function ModalVaccine({setModal}) {
-  
+export default function SecurityPostponeModal({setModal}) {
+    // This component executes when the "Postpone Appointment" button in 3_vaccine.js is clicked.
+    // It requests the user to enter their password again before they can postpone their vaccination appointment.
     function cancelPostpone() {
         setModal(false)
     }

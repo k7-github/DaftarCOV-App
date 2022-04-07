@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import Masthead from '../components/masthead-blue'
-import ModalVaccine from '../components/modals/postpone-security'
+import SecurityPostponeModal from '../components/modals/postpone-security'
 import useFetch from '../components/useFetch'
 
 
@@ -109,7 +109,7 @@ return (
             <button className="detailButtons" id="postpone" onClick={postponeModal}>Postpone Appointment</button>
         </div> 
     </main>
-    {modal && <ModalVaccine setModal={setModal} />}
+    {modal && <SecurityPostponeModal setModal={setModal} />}
     </div>
   )
 }
