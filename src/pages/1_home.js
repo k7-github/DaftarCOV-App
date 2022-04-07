@@ -3,7 +3,7 @@ import Masthead from '../components/masthead-green'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 // import { useEffect } from 'react'
-import ModalHome from '../components/modals/sign-in'
+import SignInModal from '../components/modals/sign-in'
 
 export default function Homepage() {
   
@@ -38,7 +38,7 @@ export default function Homepage() {
                 {/* "Sorry, we cannot find an account with this email address and password. Please try again." */}
         </nav>
       </div>
-      {modal === true && <ModalHome setModal={setModal} />}
+      {modal === true && <SignInModal setModal={setModal} />}
     </div>
   )
 }
