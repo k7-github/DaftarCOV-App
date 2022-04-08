@@ -3,14 +3,24 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-import SecurityUpdateModal from '../components/modals/update-security'
 import useFetch from '../components/useFetch'
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
+import SecurityUpdateModal from '../components/modals/update-security'
 
 export default function PersonalDetails() {
 
 const { id } = useParams()
 const { data, error, loading } = useFetch('', id)
 const [modal, setModal] = useState(false)
+
+if (error) {
+    setModal(true)
+}
+
+if (loading) {
+    setModal(true)
+}
 
 function updateModal() {
     setModal(true)
@@ -25,7 +35,9 @@ function toVaccine () {
   return (
     <div>
         <Masthead />
-        <main className="detailSection" id="blue">
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">PERSONAL DETAILS</h1>
@@ -36,46 +48,39 @@ function toVaccine () {
 
             <div className="detailField" id="userID">
             {/* This element contains one of the many personal details of the users. */}
-
                 <label for="userID">User ID: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userID" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                {/* Placeholders will be removed at a later date. */}
             </div>
             <div className="detailField" id="userFirstName">
                 <label for="userFirstName">First Name: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userFirstName" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userLastName">
                 <label for="userLastName">Last Name: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userLastName" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userCardNo">
                 <label for="userCardNo">Identification Card No.: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userCardNo" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userDateBirth">
                 <label for="userDateBirth">Date of Birth:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userDateBirth" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userPhoneNo">
                 <label for="userPhoneNo">Phone Number:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userPhoneNo" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userEmailAddress">
                 <label for="userEmailAddress">Email Address: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userEmailAddress" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
@@ -84,32 +89,27 @@ function toVaccine () {
             
             <div className="detailField" id="userStreet">
                 <label for="userStreet">Street: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userStreet" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userCityTown">
                 <label for="userCityTown">City/Town: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userCityTown" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userState">
                 <label for="userState">State: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userState" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userPostalCode">
                 <label for="userPostalCode">Postal Code:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userPostalCode" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="userMedical">
                 <label for="userMedical">Medical Condition: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="userMedical" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
@@ -118,7 +118,7 @@ function toVaccine () {
             <button className="detailButtons" id="appointment" onClick={toVaccine}>Appointment Details</button>
             <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
-    </main>    
+    </main>}    
     {modal && <SecurityUpdateModal setModal={setModal} />}
     </div>
   )

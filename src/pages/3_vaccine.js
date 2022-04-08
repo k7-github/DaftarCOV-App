@@ -3,15 +3,24 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-import SecurityPostponeModal from '../components/modals/postpone-security'
 import useFetch from '../components/useFetch'
-
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
+import SecurityPostponeModal from '../components/modals/postpone-security'
 
 export default function AppointmentDetails() {
 
 const { id } = useParams()
 const { data, error, loading } = useFetch('', id)
 const [modal, setModal] = useState(false)
+
+if (error) {
+    setModal(true)
+}
+
+if (loading) {
+    setModal(true)
+}
 
 function postponeModal() {
     setModal(true)
@@ -25,7 +34,9 @@ function toPersonal () {
 return (
     <div>
         <Masthead />
-        <main className="detailSection" id="blue">
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">APPOINTMENT DETAILS</h1>
@@ -36,44 +47,38 @@ return (
             <div className="detailField" id="appointmentID">
             {/* This element contains one of the many appointment details of the users. */}
                 <label for="appointmentID">Appointment ID: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="appointmentID" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                {/* Placeholders will be removed at a later date. */}
             </div>
             <div className="detailField" id="appointmentDate">
                 <label for="appointmentDate">Date: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="appointmentDate" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="appointmentTime">
                 <label for="appointmentTime">Time: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="appointmentTime" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationID">
                 <label for="locationID">Location ID: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationID" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationName">
                 <label for="locationName">Location Name:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationName" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationPhoneNo">
                 <label for="locationPhoneNo">Phone Number:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationPhoneNo" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationEmailAddress">
                 <label for="locationEmailAddress">Email Address: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationEmailAddress" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
@@ -81,26 +86,22 @@ return (
         {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
             <div className="detailField" id="locationStreet">
                 <label for="locationStreet">Street: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationStreet" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationCityTown">
                 <label for="locationCityTown">City/Town: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationCityTown" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationState">
                 <label for="locationState">State: </label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationState" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationPostalCode">
                 <label for="locationPostalCode">Postal Code:</label>
-                {loading && <p className= "loadingPlaceholder">Loading...</p>}
-                {data && <p className="detailDatabase">{ data }</p>}
+                <p for="locationPostalCode" className="detailDatabase">{ data }</p>
                 <label for="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
@@ -109,7 +110,7 @@ return (
             <button className="detailButtons" id="personal" onClick={toPersonal}>Personal Details</button>
             <button className="detailButtons" id="postpone" onClick={postponeModal}>Postpone Appointment</button>
         </div> 
-    </main>
+    </main>}
     {modal && <SecurityPostponeModal setModal={setModal} />}
     </div>
   )
