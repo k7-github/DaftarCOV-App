@@ -1,8 +1,16 @@
 import React from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
+
 import Masthead from '../components/masthead-blue'
+import useFetch from '../components/useFetch'
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
 
 export default function UpdatePage() {
+    const { id } = useParams()
+    const { data, error, loading } = useFetch('http://localhost/daftar-cov/daftar-cov-api.php' + id)
+    const [modal, setModal] = useState(false)
     const [formData, setFormData] = useState(
       {
         newPassword: "",
@@ -21,6 +29,14 @@ export default function UpdatePage() {
       }
     )
   
+    if (error) {
+        setModal(true)
+    }
+    
+    if (loading) {
+        setModal(true)
+    }
+
     function handleChange(event) {
       const {name, value,} = event.target
       setFormData(prevFormData => {
@@ -39,7 +55,9 @@ export default function UpdatePage() {
   return (
     <div>
         <Masthead />
-        <main className='inputSection' id='blue'>
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className='inputSection' id='blue'>
           <h1 className="inputTitle">ACCOUNT UPDATE</h1>
           <form className='inputForm' onSubmit={handleSubmit}>
             <div className='inputLeft'>
@@ -51,6 +69,7 @@ export default function UpdatePage() {
                       type="password"
                       id="newPassword"
                       name="newPassword"
+                      placeholder={ data }
                       value={formData.newPassword}
                        />
               </div>
@@ -61,6 +80,7 @@ export default function UpdatePage() {
                       type="password"
                       id="confirmPassword"
                       name="confirmPassword"
+                      placeholder={ data }
                       value={formData.confirmPassword}
                       pattern={formData.newPassword}
                        />
@@ -72,6 +92,7 @@ export default function UpdatePage() {
                       type="text"
                       id="firstName"
                       name="firstName"
+                      placeholder={ data }
                       value={formData.firstName}
                        />
               </div>
@@ -82,6 +103,7 @@ export default function UpdatePage() {
                       type="text"
                       id="lastName"
                       name="lastName"
+                      placeholder={ data }
                       value={formData.lastName}
                        />
               </div>
@@ -92,6 +114,7 @@ export default function UpdatePage() {
                       type="text"
                       id="cardNo"
                       name="cardNo"
+                      placeholder={ data }
                       value={formData.cardNo}
                       pattern="[0-9]{6}-[0-9, X]{2}-[0-9, X]{4}"
                        />
@@ -103,6 +126,7 @@ export default function UpdatePage() {
                       type="date"
                       id="dateBirth"
                       name="dateBirth"
+                      placeholder={ data }
                       value={formData.dateBirth}
                        />
               </div>
@@ -114,6 +138,7 @@ export default function UpdatePage() {
                       id="phoneNo"
                       name="phoneNo"
                       value={formData.phoneNo}
+                      placeholder={ data }
                       pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}"
                        />
               </div>
@@ -124,6 +149,7 @@ export default function UpdatePage() {
                       type="email"
                       id="emailAddress"
                       name="emailAddress"
+                      placeholder={ data }
                       value={formData.emailAddress}
                        />
               </div>
@@ -136,6 +162,7 @@ export default function UpdatePage() {
                           type="text"
                           id="street"
                           name="street"
+                          placeholder={ data }
                           value={formData.street}
                            />
                   </div>
@@ -146,6 +173,7 @@ export default function UpdatePage() {
                           type="text"
                           id="cityTown"
                           name="cityTown"
+                          placeholder={ data }
                           value={formData.cityTown}
                            />
                   </div>
@@ -155,6 +183,7 @@ export default function UpdatePage() {
                           onChange={handleChange}
                           id="state"
                           name="state"
+                          placeholder={ data }
                           value={formData.state}
                           >
                           <option value=" " id='center'>--- SELECT ----</option>
@@ -183,6 +212,7 @@ export default function UpdatePage() {
                           type="number"
                           id="postalCode"
                           name="postalCode"
+                          placeholder={ data }
                           value={formData.postalCode}
                           min="10000" max="99999"
                            />
@@ -194,6 +224,7 @@ export default function UpdatePage() {
                           type="text"
                           id="medical"
                           name="medical"
+                          placeholder={ data }
                           value={formData.medical}
                            />
                   </div>
@@ -206,7 +237,7 @@ export default function UpdatePage() {
                   </div> 
             </div>
           </form>
-        </main>
+        </main>}
     </div>
   )
 }
