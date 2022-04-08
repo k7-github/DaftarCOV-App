@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
 
 export default function useFetch(url) {
@@ -7,7 +6,7 @@ export default function useFetch(url) {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const abortCont = new AbortController  
+    const abortCont = new AbortController()
     fetch(url, abortCont.signal)
     .then (res => {
         if (!res.ok) {
