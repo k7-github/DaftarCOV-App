@@ -46,63 +46,63 @@ return (
         {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
             <div className="detailField" id="appointmentID">
             {/* This element contains one of the many appointment details of the users. */}
-                <label for="appointmentID">Appointment ID: </label>
-                <p for="appointmentID" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="appointmentID">Appointment ID: </label>
+                <p htmlFor="appointmentID" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
                 {/* Placeholders will be removed at a later date. */}
             </div>
             <div className="detailField" id="appointmentDate">
-                <label for="appointmentDate">Date: </label>
-                <p for="appointmentDate" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="appointmentDate">Date: </label>
+                <p htmlFor="appointmentDate" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="appointmentTime">
-                <label for="appointmentTime">Time: </label>
-                <p for="appointmentTime" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="appointmentTime">Time: </label>
+                <p htmlFor="appointmentTime" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationID">
-                <label for="locationID">Location ID: </label>
-                <p for="locationID" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationID">Location ID: </label>
+                <p htmlFor="locationID" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationName">
-                <label for="locationName">Location Name:</label>
-                <p for="locationName" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationName">Location Name:</label>
+                <p htmlFor="locationName" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationPhoneNo">
-                <label for="locationPhoneNo">Phone Number:</label>
-                <p for="locationPhoneNo" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationPhoneNo">Phone Number:</label>
+                <p htmlFor="locationPhoneNo" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationEmailAddress">
-                <label for="locationEmailAddress">Email Address: </label>
-                <p for="locationEmailAddress" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationEmailAddress">Email Address: </label>
+                <p htmlFor="locationEmailAddress" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
         <div className="detailRight">
         {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
             <div className="detailField" id="locationStreet">
-                <label for="locationStreet">Street: </label>
-                <p for="locationStreet" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationStreet">Street: </label>
+                <p htmlFor="locationStreet" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationCityTown">
-                <label for="locationCityTown">City/Town: </label>
-                <p for="locationCityTown" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationCityTown">City/Town: </label>
+                <p htmlFor="locationCityTown" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationState">
-                <label for="locationState">State: </label>
-                <p for="locationState" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationState">State: </label>
+                <p htmlFor="locationState" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
             <div className="detailField" id="locationPostalCode">
-                <label for="locationPostalCode">Postal Code:</label>
-                <p for="locationPostalCode" className="detailDatabase">{ data }</p>
-                <label for="placeholder" className="detailDatabase">(Placeholder)</label>
+                <label htmlFor="locationPostalCode">Postal Code:</label>
+                <p htmlFor="locationPostalCode" className="detailDatabase">{ data }</p>
+                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
             </div>
         </div>
         <div className="detailButtonSection">
