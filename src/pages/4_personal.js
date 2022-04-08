@@ -11,7 +11,7 @@ import SecurityUpdateModal from '../components/modals/update-security'
 export default function PersonalDetails() {
 
 const { id } = useParams()
-const { data, error, loading } = useFetch('', id)
+const { data, error, loading } = useFetch('' + id)
 const [modal, setModal] = useState(false)
 
 if (error) {
