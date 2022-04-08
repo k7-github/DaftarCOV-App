@@ -119,7 +119,7 @@ function toVaccine () {
             <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
     </main>    
-    {modal === true && <SecurityUpdateModal setModal={setModal} />}
+    {modal && <SecurityUpdateModal setModal={setModal} />}
     </div>
   )
 }

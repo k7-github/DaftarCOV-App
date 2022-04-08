@@ -38,7 +38,7 @@ export default function Homepage() {
                 {/* "Sorry, we cannot find an account with this email address and password. Please try again." */}
         </nav>
       </div>
-      {modal === true && <SignInModal setModal={setModal} />}
+      {modal && <SignInModal setModal={setModal} />}
     </div>
   )
 }
