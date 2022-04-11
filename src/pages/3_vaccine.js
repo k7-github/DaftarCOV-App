@@ -11,7 +11,7 @@ import SecurityPostponeModal from '../components/modals/postpone-security'
 export default function AppointmentDetails() {
 
 const { id } = useParams()
-const { data, error, loading } = useFetch('http://localhost/daftar-cov/daftar-cov-api.php' + data.appointments.ApplicantID)
+const { data, error, loading } = useFetch('http://localhost/daftar-cov/daftar-cov-api.php' + id)
 const [modal, setModal] = useState(false)
 
 if (error) {
