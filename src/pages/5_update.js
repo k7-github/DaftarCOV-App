@@ -15,17 +15,17 @@ export default function UpdatePage() {
       {
         newPassword: "",
         confirmPassword: "",
-        firstName: "",
-        lastName: "",
-        cardNo: "",
-        dateBirth: "",
-        phoneNo: "",
-        emailAddress: "",
-        street: "",
-        cityTown: "",
-        state: "",
-        postalCode: "",
-        medical: ""
+        applicantFirstName: "",
+        applicantLastName: "",
+        applicantCardNo: "",
+        applicantDateBirth: "",
+        applicantPhoneNo: "",
+        applicantEmailAddress: "",
+        applicantStreet: "",
+        applicantCityTown: "",
+        applicantState: "",
+        applicantPostalCode: "",
+        applicantMedical: ""
       }
     )
   
@@ -85,106 +85,106 @@ export default function UpdatePage() {
                       pattern={formData.newPassword}
                        />
               </div>
-              <div className="inputField" id="firstName">
-                  <label htmlFor="firstName">First Name: </label>
+              <div className="inputField" id="applicantFirstName">
+                  <label htmlFor="applicantFirstName">First Name: </label>
                   <input
                       onChange={handleChange}
                       type="text"
-                      id="firstName"
-                      name="firstName"
+                      id="applicantFirstName"
+                      name="applicantFirstName"
                       placeholder={ data }
-                      value={formData.firstName}
+                      value={formData.applicantFirstName}
                        />
               </div>
-              <div className="inputField" id="lastName">
-                  <label htmlFor="lastName">Last Name: </label>
+              <div className="inputField" id="applicantLastName">
+                  <label htmlFor="applicantLastName">Last Name: </label>
                   <input
                       onChange={handleChange}
                       type="text"
-                      id="lastName"
-                      name="lastName"
+                      id="applicantLastName"
+                      name="applicantLastName"
                       placeholder={ data }
-                      value={formData.lastName}
+                      value={formData.applicantLastName}
                        />
               </div>
-              <div className="inputField" id="cardNo">
-                  <label htmlFor="cardNo">Identification Card No.: </label>
+              <div className="inputField" id="applicantCardNo">
+                  <label htmlFor="applicantCardNo">Identification Card No.: </label>
                   <input
                       onChange={handleChange}
                       type="text"
-                      id="cardNo"
-                      name="cardNo"
+                      id="applicantCardNo"
+                      name="applicantCardNo"
                       placeholder={ data }
-                      value={formData.cardNo}
+                      value={formData.applicantCardNo}
                       pattern="[0-9]{6}-[0-9, X]{2}-[0-9, X]{4}"
                        />
               </div>
-              <div className="inputField" id="dateBirth">
-                  <label htmlFor="dateBirth">Date of Birth: </label>
+              <div className="inputField" id="applicantDateBirth">
+                  <label htmlFor="applicantDateBirth">Date of Birth: </label>
                   <input
                       onChange={handleChange}
                       type="date"
-                      id="dateBirth"
-                      name="dateBirth"
+                      id="applicantDateBirth"
+                      name="applicantDateBirth"
                       placeholder={ data }
-                      value={formData.dateBirth}
+                      value={formData.applicantDateBirth}
                        />
               </div>
-              <div className="inputField" id="phoneNo">
-                  <label htmlFor="phoneNo">Phone Number: </label>
+              <div className="inputField" id="applicantPhoneNo">
+                  <label htmlFor="applicantPhoneNo">Phone Number: </label>
                   <input
                       onChange={handleChange}
                       type="tel"
-                      id="phoneNo"
-                      name="phoneNo"
-                      value={formData.phoneNo}
+                      id="applicantPhoneNo"
+                      name="applicantPhoneNo"
+                      value={formData.applicantPhoneNo}
                       placeholder={ data }
                       pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}"
                        />
               </div>
-              <div className="inputField" id="emailAddress">
-                  <label htmlFor="emailAddress">Email Address: </label>
+              <div className="inputField" id="applicantEmailAddress">
+                  <label htmlFor="applicantEmailAddress">Email Address: </label>
                   <input
                       onChange={handleChange}
                       type="email"
-                      id="emailAddress"
-                      name="emailAddress"
+                      id="applicantEmailAddress"
+                      name="applicantEmailAddress"
                       placeholder={ data }
-                      value={formData.emailAddress}
+                      value={formData.applicantEmailAddress}
                        />
               </div>
             </div>
             <div className='inputRight'>
-                <div className="inputField" id="street">
-                      <label htmlFor="street">Street: </label>
+                <div className="inputField" id="applicantStreet">
+                      <label htmlFor="applicantStreet">Street: </label>
                       <input
                           onChange={handleChange}
                           type="text"
-                          id="street"
-                          name="street"
+                          id="applicantStreet"
+                          name="applicantStreet"
                           placeholder={ data }
-                          value={formData.street}
+                          value={formData.applicantStreet}
                            />
                   </div>
-                  <div className="inputField" id="cityTown">
-                      <label htmlFor="cityTown">City/Town: </label>
+                  <div className="inputField" id="applicantCityTown">
+                      <label htmlFor="applicantCityTown">City/Town: </label>
                       <input
                           onChange={handleChange}
                           type="text"
-                          id="cityTown"
-                          name="cityTown"
+                          id="applicantCityTown"
+                          name="applicantCityTown"
                           placeholder={ data }
-                          value={formData.cityTown}
+                          value={formData.applicantCityTown}
                            />
                   </div>
-                  <div className="inputField" id="state">
-                      <label htmlFor="state">State: </label>
+                  <div className="inputField" id="applicantState">
+                      <label htmlFor="applicantState">State: </label>
                       <select
                           onChange={handleChange}
-                          id="state"
-                          name="state"
+                          id="applicantState"
+                          name="applicantState"
                           placeholder={ data }
-                          value={formData.state}
+                          value={formData.applicantState}
                           >
                           <option value=" " id='center'>--- SELECT ----</option>
                           <option value="Johor">Johor</option>
@@ -205,27 +205,27 @@ export default function UpdatePage() {
                           <option value="Federal Territory of Putrajaya">Federal Territory of Putrajaya</option>
                       </select>
                   </div>
-                  <div className="inputField" id="postalCode">
-                      <label htmlFor="postalCode">Postal Code: </label>
+                  <div className="inputField" id="applicantPostalCode">
+                      <label htmlFor="applicantPostalCode">Postal Code: </label>
                       <input
                           onChange={handleChange}
                           type="number"
-                          id="postalCode"
-                          name="postalCode"
+                          id="applicantPostalCode"
+                          name="applicantPostalCode"
                           placeholder={ data }
-                          value={formData.postalCode}
+                          value={formData.applicantPostalCode}
                           min="10000" max="99999"
                            />
                   </div>
-                  <div className="inputField" id="medical">
-                      <label htmlFor="medical">Medical Condition: </label>
+                  <div className="inputField" id="applicantMedical">
+                      <label htmlFor="applicantMedical">Medical Condition: </label>
                       <input
                           onChange={handleChange}
                           type="text"
-                          id="medical"
-                          name="medical"
+                          id="applicantMedical"
+                          name="applicantMedical"
                           placeholder={ data }
-                          value={formData.medical}
+                          value={formData.applicantMedical}
                            />
                   </div>
                   <br />
