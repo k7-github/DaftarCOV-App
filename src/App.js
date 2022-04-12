@@ -11,7 +11,13 @@ import UpdatePage from './pages/5_update'
 function App() {
   
   const [signedIn, setSignedIn] = useState(false)
-  console.log(signedIn)
+  
+  if (signedIn){
+    console.log("You are signed in.")
+  } else if (!signedIn){
+    console.log("You are not signed in")
+  }
+  
   return (
     <LoginContext.Provider value={{signedIn, setSignedIn}}>
       <Router>
