@@ -11,7 +11,7 @@ import UpdatePage from './pages/5_update'
 function App() {
   
   const [signedIn, setSignedIn] = useState(false)
-  
+  console.log(signedIn)
   return (
     <LoginContext.Provider value={{signedIn, setSignedIn}}>
       <Router>
