@@ -22,7 +22,7 @@ function App() {
     <LoginContext.Provider value={{signedIn, setSignedIn}}>
       <Router>
         <Routes>
-          { signedIn === false && <Route path='/home'         element={<Homepage />} />}
+          { signedIn === false && <Route path='/'         element={<Homepage />} />}
           { signedIn === false && <Route path='/signup'   element={<SignUpPage />} />}
           { signedIn === true && <Route path='/vaccine'  element={<VaccinePage />} />}
           { signedIn === true && <Route path='/personal' element={<PersonalPage />} />}

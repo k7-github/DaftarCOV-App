@@ -9,7 +9,7 @@ export default function MastheadGreen() {
   const navigate = useNavigate()
 
   function toHome () {
-    navigate('/home')
+    navigate('/')
   }
 
   return (

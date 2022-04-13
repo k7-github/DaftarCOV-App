@@ -12,7 +12,7 @@ export default function SignOutModal({setModal}) {
 
     function signOut() {
         setSignedIn(false)
-        navigate('/home')
+        navigate('/')
     }
     return (
         <div className='modal-overlay'>
