@@ -9,7 +9,7 @@ import Masthead from '../components/masthead-blue'
 
 export default function UpdatePage() {
     // const { id } = useParams()
-    // const { data, error, loading } = useFetch('http://localhost/daftar-cov/daftar-cov-api.php' + id)
+    // const { data, error, loading } = useFetch()
     // const [modal, setModal] = useState(false)
     const [formData, setFormData] = useState(
       {
