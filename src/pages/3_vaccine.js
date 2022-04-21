@@ -17,8 +17,8 @@ export default function AppointmentDetails() {
         // Click the plus button or press Ctrl+Shift+` to open a new terminal; or
         // Click the symbol on the left of the trash can symbol or press Ctrl+Shift+5 to split the terminal.
     // Type one of the following commands in one of the terminals:
-        // npx json-server -p 3500 - w database/database.json
-        // npx json-server --watch database/database.json -port 8000
+        // npx json-server -p 3500 -w database/database.json
+        // npx json-server --watch database/database.json --port 8000
 
 const [modal, setModal] = useState(false)
 
