@@ -11,7 +11,7 @@ import SecurityUpdateModal from '../components/modals/update-security'
 export default function PersonalDetails() {
 
 // const { id } = useParams()
-// const { data, error, loading } = useFetch()
+// const { data, error, loading } = useFetch( http://localhost:3500/daftarcov)
 // To launch the JSON server:
     // 1. Open the terminal (press Ctlr + `), then do one of the following methods:
         // Click the plus button or press Ctrl+Shift+` to open a new terminal; or
@@ -19,7 +19,7 @@ export default function PersonalDetails() {
     // Type one of the following commands in one of the terminals:
         // npx json-server -p 3500 -w database/database.json
         // npx json-server --watch database/database.json --port 8000
-        
+
 const [modal, setModal] = useState(false)
 
 // if (error) {
