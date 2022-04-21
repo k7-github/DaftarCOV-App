@@ -4,21 +4,21 @@ import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
 import useFetch from '../components/useFetch'
-import FetchErrorModal from '../components/modals/fetch-error'
-import FetchLoadingModal from '../components/modals/fetch-loading'
+// import FetchErrorModal from '../components/modals/fetch-error'
+// import FetchLoadingModal from '../components/modals/fetch-loading'
 import SecurityUpdateModal from '../components/modals/update-security'
 
 export default function PersonalDetails() {
 
 const { ApplicantID } = useParams()
-const { data, error, loading } = useFetch('http://localhost:3500/daftarcov/' + ApplicantID)
+const { data, error, loading } = useFetch('http://localhost:3100/applicants/' + ApplicantID)
 // To launch the JSON server:
     // 1. Open the terminal (press Ctlr + `), then do one of the following methods:
         // Click the plus button or press Ctrl+Shift+` to open a new terminal; or
         // Click the symbol on the left of the trash can symbol or press Ctrl+Shift+5 to split the terminal.
     // Type one of the following commands in one of the terminals:
-        // npx json-server -p 3500 -w database/database.json
-        // npx json-server --watch database/database.json --port 8000
+        // npx json-server -p 3100 -w database/applicants.json; or
+        // npx json-server --watch database/applicants.json --port 8000
 
 const [modal, setModal] = useState(false)
 
