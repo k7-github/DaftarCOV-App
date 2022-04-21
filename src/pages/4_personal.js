@@ -44,7 +44,9 @@ function toVaccine () {
         <Masthead />
         {/* {modal && <FetchErrorModal setModal={setModal} error={error} />} */}
         {/* {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>} */}
-        <main className="detailSection" id="blue">
+        {loading && <h1 className='loadingScreen'>LOADING...</h1>}
+        {error && <h1 className='errorMessage'>{error}</h1>}
+        {data && <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">PERSONAL DETAILS</h1>
@@ -55,38 +57,38 @@ function toVaccine () {
             <div className="detailField" id="applicantID">
             {/* This element contains one of the many personal details of the applicants. */}
                 <label htmlFor="applicantID">Applicant ID: </label>
-                <p id="applicantID" className="detailDatabase">{ data.applicants.ApplicantID }</p>
+                <p id="applicantID" className="detailDatabase">{ data.ApplicantID }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
                 {/* Placeholders will be removed at a later date. */}
             </div>
             <div className="detailField" id="applicantFirstName">
                 <label htmlFor="applicantFirstName">First Name: </label>
-                <p id="applicantFirstName" className="detailDatabase">{ data.applicants.FirstName }</p>
+                <p id="applicantFirstName" className="detailDatabase">{ data.FirstName }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantLastName">
                 <label htmlFor="applicantLastName">Last Name: </label>
-                <p id="applicantLastName" className="detailDatabase">{ data.applicants.LastName }</p>
+                <p id="applicantLastName" className="detailDatabase">{ data.LastName }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantCardNo">
                 <label htmlFor="applicantCardNo">Identification Card No.: </label>
-                <p id="applicantCardNo" className="detailDatabase">{ data.applicants.ICNo }</p>
+                <p id="applicantCardNo" className="detailDatabase">{ data.ICNo }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantDateBirth">
                 <label htmlFor="applicantDateBirth">Date of Birth:</label>
-                <p id="applicantDateBirth" className="detailDatabase">{ data.applicants.BirthDate }</p>
+                <p id="applicantDateBirth" className="detailDatabase">{ data.BirthDate }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantPhoneNo">
                 <label htmlFor="applicantPhoneNo">Phone Number:</label>
-                <p id="applicantPhoneNo" className="detailDatabase">{ data.applicants.PhoneNo }</p>
+                <p id="applicantPhoneNo" className="detailDatabase">{ data.PhoneNo }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantEmailAddress">
                 <label htmlFor="applicantEmailAddress">Email Address: </label>
-                <p id="applicantEmailAddress" className="detailDatabase">{ data.applicants.EmailAddress }</p>
+                <p id="applicantEmailAddress" className="detailDatabase">{ data.EmailAddress }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
         </div>
@@ -95,27 +97,27 @@ function toVaccine () {
             
             <div className="detailField" id="applicantStreet">
                 <label htmlFor="applicantStreet">Street: </label>
-                <p id="applicantStreet" className="detailDatabase">{ data.applicants.Street }</p>
+                <p id="applicantStreet" className="detailDatabase">{ data.Street }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantCityTown">
                 <label htmlFor="applicantCityTown">City/Town: </label>
-                <p id="applicantCityTown" className="detailDatabase">{ data.applicants.CityTown }</p>
+                <p id="applicantCityTown" className="detailDatabase">{ data.CityTown }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantState">
                 <label htmlFor="applicantState">State: </label>
-                <p id="applicantState" className="detailDatabase">{ data.applicants.CountryState }</p>
+                <p id="applicantState" className="detailDatabase">{ data.CountryState }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantPostalCode">
                 <label htmlFor="applicantPostalCode">Postal Code:</label>
-                <p id="applicantPostalCode" className="detailDatabase">{ data.applicants.PostalCode }</p>
+                <p id="applicantPostalCode" className="detailDatabase">{ data.PostalCode }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
             <div className="detailField" id="applicantMedical">
                 <label htmlFor="applicantMedical">Medical Condition: </label>
-                <p id="applicantMedical" className="detailDatabase">{ data.applicants.MedicalCondition }</p>
+                <p id="applicantMedical" className="detailDatabase">{ data.MedicalCondition }</p>
                 {/* <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label> */}
             </div>
         </div>
@@ -124,7 +126,7 @@ function toVaccine () {
             <button className="detailButtons" id="appointment" onClick={toVaccine}>Appointment Details</button>
             <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
-    </main>
+    </main>}
     {modal && <SecurityUpdateModal setModal={setModal} />}
     </div>
   )
