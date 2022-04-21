@@ -1,0 +1,34 @@
+{
+    "appointments": [
+        {
+            "AppointmentID": 11101,
+            "ApplicantID": 11101,
+            "LocationID": 11101,
+            "DateandTime": "2022-01-10 10:30:00"
+        },
+        {
+            "AppointmentID": 11102,
+            "ApplicantID": 11103,
+            "LocationID": 11104,
+            "DateandTime": "2022-01-17 08:30:00"
+        },
+        {
+            "AppointmentID": 11103,
+            "ApplicantID": 11105,
+            "LocationID": 11102,
+            "DateandTime": "2022-01-24 09:30:00"
+        },
+        {
+            "AppointmentID": 11104,
+            "ApplicantID": 11102,
+            "LocationID": 11105,
+            "DateandTime": "2022-01-31 10:30:00"
+        },
+        {
+            "AppointmentID": 11105,
+            "ApplicantID": 11104,
+            "LocationID": 11103,
+            "DateandTime": "2022-02-07 11:30:00"
+        }
+    ]
+}

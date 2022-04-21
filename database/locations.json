@@ -1,0 +1,54 @@
+{
+    "locations": [
+        {
+            "LocationID": 11101,
+            "Name": "Hongkod Koisaan",
+            "PhoneNo": "088-713 696",
+            "EmailAddress": "koisaan@kdca.org.my",
+            "Street": "KM8, Jalan Penampang",
+            "CityTown": "Penampang",
+            "CountryState": "Sabah",
+            "PostalCode": 89509
+        },
+        {
+            "LocationID": 11102,
+            "Name": "Hospital MESRA Bukit Padang",
+            "PhoneNo": "088-240 984",
+            "EmailAddress": "hmbp@moh.gov.my",
+            "Street": "Jalan Hospital Mesra",
+            "CityTown": "Kota Kinabalu",
+            "CountryState": "Sabah",
+            "PostalCode": 88815
+        },
+        {
+            "LocationID": 11103,
+            "Name": "Hospital Queen Elizabeth",
+            "PhoneNo": "088-517 555",
+            "EmailAddress": "pengarah.hqe@moh.gov.my",
+            "Street": "13a, Jalan Penampang",
+            "CityTown": "Kota Kinabalu",
+            "CountryState": "Sabah",
+            "PostalCode": 88200
+        },
+        {
+            "LocationID": 11104,
+            "Name": "Hospital Queen Elizabeth II",
+            "PhoneNo": "088-324 600",
+            "EmailAddress": "hqe.2@moh.gov.my",
+            "Street": "Lorong Bersatu, Off Jalan Damai Luyang",
+            "CityTown": "Kota Kinabalu",
+            "CountryState": "Sabah",
+            "PostalCode": 88300
+        },
+        {
+            "LocationID": 11105,
+            "Name": "Hospital WKKS",
+            "PhoneNo": "088-522 600",
+            "EmailAddress": "hwkks@moh.gov.my",
+            "Street": "Jalan Hospital Likas",
+            "CityTown": "Kota Kinabalu",
+            "CountryState": "Sabah",
+            "PostalCode": 88996
+        }
+    ]
+}
