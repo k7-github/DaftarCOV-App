@@ -18,7 +18,7 @@ const { data, error, loading } = useFetch('http://localhost:3100/applicants/' + 
         // Click the symbol on the left of the trash can symbol or press Ctrl+Shift+5 to split the terminal.
     // Type one of the following commands in one of the terminals:
         // npx json-server -p 3100 -w database/applicants.json; or
-        // npx json-server --watch database/applicants.json --port 8000
+        // npx json-server --watch database/applicants.json --port 3100
 
 const [modal, setModal] = useState(false)
 
