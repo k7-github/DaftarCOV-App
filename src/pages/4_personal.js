@@ -11,7 +11,7 @@ import SecurityUpdateModal from '../components/modals/update-security'
 export default function PersonalDetails() {
 
 const { ApplicantID } = useParams()
-const { data, error, loading } = useFetch('http://localhost:3100/applicants/' + ApplicantID)
+const { data, error, loading } = useFetch('http://localhost:3100/applicants/' + data.ApplicantID)
 // To launch the JSON server:
     // 1. Open the terminal (press Ctlr + `), then do one of the following methods:
         // Click the plus button or press Ctrl+Shift+` to open a new terminal; or
