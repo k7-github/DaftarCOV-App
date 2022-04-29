@@ -1,17 +1,17 @@
 import React from 'react'
-// import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-// import useFetch from '../components/useFetch'
-// import FetchErrorModal from '../components/modals/fetch-error'
-// import FetchLoadingModal from '../components/modals/fetch-loading'
+import useFetch from '../components/useFetch'
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
 
 export default function UpdatePage() {
-    // const { id } = useParams()
-    // const { data, error, loading } = useFetch(``)
+    const { id } = useParams()
+    const { data, error, loading } = useFetch(``)
         
-    // const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false)
     const [formData, setFormData] = useState(
       {
         newPassword: "",
@@ -30,13 +30,13 @@ export default function UpdatePage() {
       }
     )
   
-    // if (error) {
-    //     setModal(true)
-    // }
+    if (error) {
+        setModal(true)
+    }
     
-    // if (loading) {
-    //     setModal(true)
-    // }
+    if (loading) {
+        setModal(true)
+    }
 
     function handleChange(event) {
       const {name, value,} = event.target
@@ -50,15 +50,14 @@ export default function UpdatePage() {
   
   function handleSubmit(event) {
       event.preventDefault()
-    // console.log(formData)
   }
 
   return (
     <div>
         <Masthead />
-        {/* {modal && <FetchErrorModal setModal={setModal} error={error} />} */}
-        {/* {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>} */}
-        <main className='inputSection' id='blue'>
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className='inputSection' id='blue'>
           <h1 className="inputTitle">ACCOUNT UPDATE</h1>
           <form className='inputForm' onSubmit={handleSubmit}>
             <div className='inputLeft'>
@@ -236,7 +235,7 @@ export default function UpdatePage() {
                   </div> 
             </div>
           </form>
-        </main>
+        </main>}
     </div>
   )
 }

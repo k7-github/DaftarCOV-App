@@ -1,27 +1,27 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-// import useFetch from '../components/useFetch'
-// import FetchErrorModal from '../components/modals/fetch-error'
-// import FetchLoadingModal from '../components/modals/fetch-loading'
+import useFetch from '../components/useFetch'
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
 import SecurityUpdateModal from '../components/modals/update-security'
 
 export default function PersonalDetails() {
 
-// const { id } = useParams()
-// const { data, error, loading } = useFetch(``)
+const { id } = useParams()
+const { data, error, loading } = useFetch(``)
 
 const [modal, setModal] = useState(false)
 
-// if (error) {
-    // setModal(true)
-// }
+if (error) {
+    setModal(true)
+}
 
-// if (loading) {
-    // setModal(true)
-// }
+if (loading) {
+    setModal(true)
+}
 
 function updateModal() {
     setModal(true)
@@ -35,11 +35,9 @@ function toVaccine () {
   return (
     <div>
         <Masthead />
-        {/* {modal && <FetchErrorModal setModal={setModal} error={error} />} */}
-        {/* {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>} */}
-        {/* {loading && <h1 className='loadingScreen'>LOADING...</h1>} */}
-        {/* {error && <h1 className='errorMessage'>{error}</h1>} */}
-        <main className="detailSection" id="blue">
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">PERSONAL DETAILS</h1>
@@ -119,7 +117,7 @@ function toVaccine () {
             <button className="detailButtons" id="appointment" onClick={toVaccine}>Appointment Details</button>
             <button className="detailButtons" id="updateAccount" onClick={updateModal}>Update Account</button>
         </div> 
-    </main>
+    </main>}
     {modal && <SecurityUpdateModal setModal={setModal} />}
     </div>
   )

@@ -1,27 +1,27 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import Masthead from '../components/masthead-blue'
-// import useFetch from '../components/useFetch'
-// import FetchErrorModal from '../components/modals/fetch-error'
-// import FetchLoadingModal from '../components/modals/fetch-loading'
+import useFetch from '../components/useFetch'
+import FetchErrorModal from '../components/modals/fetch-error'
+import FetchLoadingModal from '../components/modals/fetch-loading'
 import SecurityPostponeModal from '../components/modals/postpone-security'
 
 export default function AppointmentDetails() {
 
-// const { id } = useParams()
-// const { data, error, loading } = useFetch(``)
+const { id } = useParams()
+const { data, error, loading } = useFetch(``)
 
 const [modal, setModal] = useState(false)
 
-// if (error) {
-//     setModal(true)
-// }
+if (error) {
+    setModal(true)
+}
 
-// if (loading) {
-//     setModal(true)
-// }
+if (loading) {
+    setModal(true)
+}
 
 function postponeModal() {
     setModal(true)
@@ -35,9 +35,9 @@ function toPersonal () {
 return (
     <div>
         <Masthead />
-        {/* {modal && <FetchErrorModal setModal={setModal} error={error} />}/ */}
-        {/* {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>} */}
-        <main className="detailSection" id="blue">
+        {modal && <FetchErrorModal setModal={setModal} error={error} />}/
+        {modal && <FetchLoadingModal setModal={setModal} loading={loading}/>}
+        {data && <main className="detailSection" id="blue">
         {/* This is the main section of this page. */}
 
         <h1 className="detailTitle">APPOINTMENT DETAILS</h1>
@@ -111,7 +111,7 @@ return (
             <button className="detailButtons" id="personal" onClick={toPersonal}>Personal Details</button>
             <button className="detailButtons" id="postpone" onClick={postponeModal}>Postpone Appointment</button>
         </div> 
-    </main>
+    </main>}
     {modal && <SecurityPostponeModal setModal={setModal} />}
     </div>
   )
