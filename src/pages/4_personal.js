@@ -48,68 +48,55 @@ function toVaccine () {
             <div className="detailField" id="applicantID">
             {/* This element contains one of the many personal details of the applicants. */}
                 <label htmlFor="applicantID">Applicant ID: </label>
-                {/* <p id="applicantID" className="detailDatabase">{ data.ApplicantID }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
-                {/* Placeholders will be removed at a later date. */}
+                <p id="applicantID" className="detailDatabase">{ data.applicants.ApplicantID }</p>
             </div>
             <div className="detailField" id="applicantFirstName">
                 <label htmlFor="applicantFirstName">First Name: </label>
-                {/* <p id="applicantFirstName" className="detailDatabase">{ data.FirstName }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantFirstName" className="detailDatabase">{ data.applicants.FirstName }</p>
             </div>
             <div className="detailField" id="applicantLastName">
                 <label htmlFor="applicantLastName">Last Name: </label>
-                {/* <p id="applicantLastName" className="detailDatabase">{ data.LastName }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantLastName" className="detailDatabase">{ data.applicants.LastName }</p>
             </div>
             <div className="detailField" id="applicantCardNo">
                 <label htmlFor="applicantCardNo">Identification Card No.: </label>
-                {/* <p id="applicantCardNo" className="detailDatabase">{ data.ICNo }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantCardNo" className="detailDatabase">{ data.applicants.ICNo }</p>
             </div>
             <div className="detailField" id="applicantDateBirth">
                 <label htmlFor="applicantDateBirth">Date of Birth:</label>
-                {/* <p id="applicantDateBirth" className="detailDatabase">{ data.BirthDate }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantDateBirth" className="detailDatabase">{ data.applicants.BirthDate }</p>
             </div>
             <div className="detailField" id="applicantPhoneNo">
                 <label htmlFor="applicantPhoneNo">Phone Number:</label>
-                {/* <p id="applicantPhoneNo" className="detailDatabase">{ data.PhoneNo }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantPhoneNo" className="detailDatabase">{ data.applicants.PhoneNo }</p>
             </div>
             <div className="detailField" id="applicantEmailAddress">
                 <label htmlFor="applicantEmailAddress">Email Address: </label>
-                {/* <p id="applicantEmailAddress" className="detailDatabase">{ data.EmailAddress }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantEmailAddress" className="detailDatabase">{ data.applicants.EmailAddress }</p>
             </div>
         </div>
         <div className="detailRight">
-        {/* This is the invisible box within the .infoBox element which contains the .detailField elements on the left side. */}
+        {/* This is the invisible box within the .infoBox element which contains the .detailField elements on the right side. */}
             
             <div className="detailField" id="applicantStreet">
                 <label htmlFor="applicantStreet">Street: </label>
-                {/* <p id="applicantStreet" className="detailDatabase">{ data.Street }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantStreet" className="detailDatabase">{ data.applicants.Street }</p>
             </div>
             <div className="detailField" id="applicantCityTown">
                 <label htmlFor="applicantCityTown">City/Town: </label>
-                {/* <p id="applicantCityTown" className="detailDatabase">{ data.CityTown }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantCityTown" className="detailDatabase">{ data.applicants.CityTown }</p>
             </div>
             <div className="detailField" id="applicantState">
                 <label htmlFor="applicantState">State: </label>
-                {/* <p id="applicantState" className="detailDatabase">{ data.CountryState }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantState" className="detailDatabase">{ data.applicants.CountryState }</p>
             </div>
             <div className="detailField" id="applicantPostalCode">
                 <label htmlFor="applicantPostalCode">Postal Code:</label>
-                {/* <p id="applicantPostalCode" className="detailDatabase">{ data.PostalCode }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantPostalCode" className="detailDatabase">{ data.applicants.PostalCode }</p>
             </div>
             <div className="detailField" id="applicantMedical">
                 <label htmlFor="applicantMedical">Medical Condition: </label>
-                {/* <p id="applicantMedical" className="detailDatabase">{ data.MedicalCondition }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="applicantMedical" className="detailDatabase">{ data.applicants.MedicalCondition }</p>
             </div>
         </div>
         <div className="detailButtonSection">

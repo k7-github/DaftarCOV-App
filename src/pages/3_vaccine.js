@@ -48,62 +48,50 @@ return (
             <div className="detailField" id="appointmentID">
             {/* This element contains one of the many appointment details of the users. */}
                 <label htmlFor="appointmentID">Appointment ID: </label>
-                {/* <p id="appointmentID" className="detailDatabase">{ data.appointments.AppointmentID }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
-                {/* Placeholders will be removed at a later date. */}
+                <p id="appointmentID" className="detailDatabase">{ data.appointments.AppointmentID }</p>
             </div>
             <div className="detailField" id="appointmentDate">
                 <label htmlFor="appointmentDate">Appointment Date: </label>
-                {/* <p id="appointmentDate" className="detailDatabase">{ data.appointments.DateandTime }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="appointmentDate" className="detailDatabase">{ data.appointments.DateandTime }</p>
             </div>
             <div className="detailField" id="appointmentTime">
                 <label htmlFor="appointmentTime">Appointment Time: </label>
-                {/* <p id="appointmentTime" className="detailDatabase">{ data.appointments.DateandTime }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="appointmentTime" className="detailDatabase">{ data.appointments.DateandTime }</p>
             </div>
             <div className="detailField" id="locationID">
                 <label htmlFor="locationID">Location ID: </label>
-                {/* <p id="locationID" className="detailDatabase">{ data.appointments.LocationID }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationID" className="detailDatabase">{ data.appointments.LocationID }</p>
             </div>
             <div className="detailField" id="locationName">
                 <label htmlFor="locationName">Location Name:</label>
-                {/* <p id="locationName" className="detailDatabase">{ data.locations.Name }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationName" className="detailDatabase">{ data.locations.Name }</p>
             </div>
             <div className="detailField" id="locationPhoneNo">
                 <label htmlFor="locationPhoneNo">Phone Number:</label>
-                {/* <p id="locationPhoneNo" className="detailDatabase">{ data.locations.PhoneNo }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationPhoneNo" className="detailDatabase">{ data.locations.PhoneNo }</p>
             </div>
             <div className="detailField" id="locationEmailAddress">
                 <label htmlFor="locationEmailAddress">Email Address: </label>
-                {/* <p id="locationEmailAddress" className="detailDatabase">{ data.locations.EmailAddress }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationEmailAddress" className="detailDatabase">{ data.locations.EmailAddress }</p>
             </div>
         </div>
         <div className="detailRight">
-        {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the left side. */}
+        {/* This is the invisible box within the .infoBox element which contains the .infoField elements on the right side. */}
             <div className="detailField" id="locationStreet">
                 <label htmlFor="locationStreet">Street: </label>
-                {/* <p id="locationStreet" className="detailDatabase">{ data.locations.Street }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationStreet" className="detailDatabase">{ data.locations.Street }</p>
             </div>
             <div className="detailField" id="locationCityTown">
                 <label htmlFor="locationCityTown">City/Town: </label>
-                {/* <p id="locationCityTown" className="detailDatabase">{ data.locations.CityTown }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationCityTown" className="detailDatabase">{ data.locations.CityTown }</p>
             </div>
             <div className="detailField" id="locationState">
                 <label htmlFor="locationState">State: </label>
-                {/* <p id="locationState" className="detailDatabase">{ data.location.CountryState }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationState" className="detailDatabase">{ data.location.CountryState }</p>
             </div>
             <div className="detailField" id="locationPostalCode">
                 <label htmlFor="locationPostalCode">Postal Code:</label>
-                {/* <p id="locationPostalCode" className="detailDatabase">{ data.locations.PostalCode }</p> */}
-                <label htmlFor="placeholder" className="detailDatabase">(Placeholder)</label>
+                <p id="locationPostalCode" className="detailDatabase">{ data.locations.PostalCode }</p>
             </div>
         </div>
         <div className="detailButtonSection">

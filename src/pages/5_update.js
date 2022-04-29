@@ -90,7 +90,7 @@ export default function UpdatePage() {
                       type="text"
                       id="applicantFirstName"
                       name="applicantFirstName"
-                    //   placeholder={ data.applicants.FirstName }
+                      placeholder={ data.applicants.FirstName }
                       value={formData.applicantFirstName}
                        />
               </div>
@@ -101,7 +101,7 @@ export default function UpdatePage() {
                       type="text"
                       id="applicantLastName"
                       name="applicantLastName"
-                    //   placeholder={ data.applicants.LastName }
+                      placeholder={ data.applicants.LastName }
                       value={formData.applicantLastName}
                        />
               </div>
@@ -112,7 +112,7 @@ export default function UpdatePage() {
                       type="text"
                       id="applicantCardNo"
                       name="applicantCardNo"
-                    //   placeholder={ data.applicants.ICNo }
+                      placeholder={ data.applicants.ICNo }
                       value={formData.applicantCardNo}
                       pattern="[0-9]{6}-[0-9, X]{2}-[0-9, X]{4}"
                        />
@@ -124,7 +124,7 @@ export default function UpdatePage() {
                       type="date"
                       id="applicantDateBirth"
                       name="applicantDateBirth"
-                    //   placeholder={ data.applicants.BirthDate }
+                      placeholder={ data.applicants.BirthDate }
                       value={formData.applicantDateBirth}
                        />
               </div>
@@ -136,7 +136,7 @@ export default function UpdatePage() {
                       id="applicantPhoneNo"
                       name="applicantPhoneNo"
                       value={formData.applicantPhoneNo}
-                    //   placeholder={ data.applicants.PhoneNo }
+                      placeholder={ data.applicants.PhoneNo }
                       pattern="[0-9]{3}-[0-9, X]{3} [0-9, X]{4}"
                        />
               </div>
@@ -147,7 +147,7 @@ export default function UpdatePage() {
                       type="email"
                       id="applicantEmailAddress"
                       name="applicantEmailAddress"
-                    //   placeholder={ data.applicants.EmailAddress }
+                      placeholder={ data.applicants.EmailAddress }
                       value={formData.applicantEmailAddress}
                        />
               </div>
@@ -160,7 +160,7 @@ export default function UpdatePage() {
                           type="text"
                           id="applicantStreet"
                           name="applicantStreet"
-                        //   placeholder={ data.applicants.Street }
+                          placeholder={ data.applicants.Street }
                           value={formData.applicantStreet}
                            />
                   </div>
@@ -171,7 +171,7 @@ export default function UpdatePage() {
                           type="text"
                           id="applicantCityTown"
                           name="applicantCityTown"
-                        //   placeholder={ data.applicants.CityTown }
+                          placeholder={ data.applicants.CityTown }
                           value={formData.applicantCityTown}
                            />
                   </div>
@@ -181,7 +181,7 @@ export default function UpdatePage() {
                           onChange={handleChange}
                           id="applicantState"
                           name="applicantState"
-                        //   placeholder={ data.applicants.CountryState }
+                          placeholder={ data.applicants.CountryState }
                           value={formData.applicantState}
                           >
                           <option value=" " id='center'>--- SELECT ----</option>
@@ -210,7 +210,7 @@ export default function UpdatePage() {
                           type="number"
                           id="applicantPostalCode"
                           name="applicantPostalCode"
-                        //   placeholder={ data.applicants.PostalCode }
+                          placeholder={ data.applicants.PostalCode }
                           value={formData.applicantPostalCode}
                           min="10000" max="99999"
                            />
@@ -222,7 +222,7 @@ export default function UpdatePage() {
                           type="text"
                           id="applicantMedical"
                           name="applicantMedical"
-                        //   placeholder={ data.applicants.MedicalCondition }
+                          placeholder={ data.applicants.MedicalCondition }
                           value={formData.applicantMedical}
                            />
                   </div>
