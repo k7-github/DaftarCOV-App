@@ -8,8 +8,8 @@ import FetchErrorModal from '../components/modals/fetch-error'
 import FetchLoadingModal from '../components/modals/fetch-loading'
 
 export default function UpdatePage() {
-    const { id } = useParams()
-    const { data, error, loading } = useFetch(``)
+    const { ApplicantID } = useParams()
+    const { data, error, loading } = useFetch(`http://localhost/daftar-cov/daftar-cov-api.php/${ApplicantID}`)
         
     const [modal, setModal] = useState(false)
     const [formData, setFormData] = useState(

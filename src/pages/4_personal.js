@@ -10,8 +10,8 @@ import SecurityUpdateModal from '../components/modals/update-security'
 
 export default function PersonalDetails() {
 
-const { id } = useParams()
-const { data, error, loading } = useFetch(``)
+const { ApplicantID } = useParams()
+const { data, error, loading } = useFetch(`http://localhost/daftar-cov/daftar-cov-api.php/${ApplicantID}`)
 
 const [modal, setModal] = useState(false)
 
